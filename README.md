@@ -1,5 +1,5 @@
-# API usando IA para tratamento de dados (nome)
-Descrição
+# 36'Oracle 
+A 36'Oracle é uma API com o intuito de facilitar a vida dos Bancos com o uso blockchain para tratá-los, categorizar os clientes, prever o tipo de investidor do cliente e recomendar a melhor forma de investimento para o mesmo. 
 (o banco entra em contato com a gente)
 
 ### Tecnologias Utilizadas
