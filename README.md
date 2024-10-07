@@ -29,7 +29,7 @@ Descrição
 
   ### 3.3 Leitura da recomendação 
 
-  ### 4.  
+  ### 4.  Finalização
 
 ## Como funciona:
 
