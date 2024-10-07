@@ -2,11 +2,34 @@
 Descrição
 (o banco entra em contato com a gente)
 
-## Onde está hospedada
+### Tecnologias Utilizadas
 
-## Tecnologias ultilizadas 
+- **Backend**: Implementado em [TypeScript](https://www.typescriptlang.org/).
+- **Framework**: Utiliza [ApolloServer](https://www.apollographql.com/docs/apollo-server/) para gerenciamento das requisições.
+- **API**: Arquitetura desenvolvida com [GraphQL](https://graphql.org/).
+- **Frontend**: Estruturado com [ReactJS](https://reactjs.org/).
 
-## Treinamento da IA
+## Como utilizar 
+
+  ### 1. Login e autenticação 
+
+  ### 2. Treinamento da IA
+
+  ### 2.1. Envio de dados
+  
+  ### 2.2. Selecionamento de features
+
+  ### 2.3. Finalização
+
+  ### 3.   Previsão e recomendação 
+
+  ### 3.1 Envio dos dados do cliente
+
+  ### 3.2 Leitura de previsão 
+
+  ### 3.3 Leitura da recomendação 
+
+  ### 4.  
 
 ## Como funciona:
 
@@ -33,6 +56,3 @@ Descrição
   ### Categorizar os clientes 
 
   ### Recomendação
-  
-README
-
