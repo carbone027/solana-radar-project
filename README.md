@@ -1,112 +1,129 @@
-# 36'Oracle - Introduction 🚀
+# 36'Oracle - Introdução 🚀
 
-**36'Oracle** is an advanced API designed to optimize banking data management using **blockchain** with the **[Solana](https://solana.com/)** platform, which provides **high efficiency, scalability, and security**. Blockchain technology ensures that data and transactions are stored immutably and transparently, with each record available for verification at any time. Combining blockchain with **artificial intelligence**, the API offers robust features for data processing, customer categorization and investor profile prediction.
+A **36'Oracle** é uma API avançada projetada para otimizar a gestão de dados bancários utilizando **blockchain** com a plataforma **[Solana](https://solana.com/)**, que proporciona **alta eficiência, escalabilidade e segurança**. A tecnologia blockchain garante que os dados e transações sejam armazenados de maneira imutável e transparente, com cada registro disponível para verificação a qualquer momento. Aliando blockchain à **inteligência artificial**, a API oferece funcionalidades robustas para o tratamento de dados, categorização de clientes, previsão de perfis de investidor e recomendações personalizadas. 
 
-### Key Features
+### Principais Funcionalidades
 
-- **🧹 Data Processing and Normalization**: Automated process to clean and organize large volumes of banking data, with each transaction recorded on the blockchain, ensuring transparency and integrity.
-- **📊 Customer Categorization**: Accurate identification of customer investor profiles, enabling personalized segmentation. Data verification can be audited directly on the blockchain.
-- **🔮 Investor Type Prediction**: AI accurately predicts the type of investor for each customer, categorizing them for strategic decisions.
-- **🔗 HTTP Investor Request**: The bank can request the investor type of any customer directly via HTTP request, quickly obtaining the AI-categorized profile.
+- **🧹 Tratamento e Normalização de Dados**: Processo automatizado para limpar e organizar grandes volumes de dados bancários, com cada transação registrada no blockchain, garantindo transparência e integridade.
+- **📊 Categorização de Clientes**: Identificação precisa dos perfis de investidor dos clientes, permitindo segmentação personalizada. A verificação de dados pode ser auditada diretamente no blockchain.
+- **🔮 Previsão de Tipo de Investidor**: A IA prevê com precisão o tipo de investidor de cada cliente, categorizando-os para decisões estratégicas.
+- **🔗 Requisição HTTP para Investidor**: O banco pode solicitar o tipo de investidor de qualquer cliente diretamente via requisição HTTP, obtendo rapidamente o perfil categorizado pela IA.
 
-The API is designed for financial institutions seeking to **optimize their operations**, providing valuable insights into customer profiles and ensuring that data is always accessible and auditable via blockchain.
-
----
-
-### Technologies Used 🛠️
-
-- **Blockchain platform**: Developed using [Solana](https://solana.com/), offering high efficiency, security, and scalability for financial transactions, along with support for smart contracts for process automation.
-- **Programming Language**: Implemented in [TypeScript](https://www.typescriptlang.org/), ensuring a robust, statically-typed codebase.
-- **AI**: Developed in [Python](https://www.python.org/), using machine learning libraries like [scikit-learn](https://scikit-learn.org/) for investor profile training and prediction.
-- **API**: Architecture built with [GraphQL](https://graphql.org/), providing flexible and precise data queries.
-- **Framework**: Utilizes [ApolloServer](https://www.apollographql.com/docs/apollo-server/) to manage GraphQL requests efficiently and modularly.
+A API foi projetada para instituições financeiras que buscam **otimizar suas operações**, fornecendo informações valiosas sobre o perfil dos clientes e garantindo que os dados estejam sempre acessíveis e auditáveis via blockchain.
 
 ---
 
-### Getting Started 🚀
+### Tecnologias Utilizadas 🛠️
 
-Contact us via email to integrate **36'Oracle** into your banking system and enjoy an automated and intelligent process for data and investment management. With blockchain implemented, you will have **complete visibility and security** over transactions and recommendations.
-
----
-
-## How to Use 👨‍💻👩‍💻
-
-### 1. Login and Authentication 🔑
-Authentication will be provided by the 36'Oracle support team, who will send the necessary credentials via email. Once you receive this information, access our [login portal](www.google.com.br) and log in, allowing you to use all the features of our services.
-
-### 2. AI Training 🤖
-AI training is automatically carried out by the system based on the data provided via **XML**. For more details on the process, check out the [How It Works](#how-it-works) section.
-
-#### 2.1. Data Upload
-Upload your customer database using a **XML** file and define the tags corresponding to the column names. This dataset will be used by the AI for training, enabling the system to learn and categorize customers accurately and personally. Every step of the data upload and processing, including AI training, will be recorded on the **Solana** blockchain, ensuring total transparency, auditability, and data security throughout the process.
-
-#### 2.2. Feature Selection
-Choose and input the features you want to use in the AI model to optimize the training process and obtain the best predictions based on the data provided.
-
-#### 2.3. Conclusion
-After the feature selection and training process, the AI will process and categorize the customers, optimizing them for future analyses. All results can be verified on the blockchain.
+- **Plataforma blockchain**: Desenvolvido utilizando a [Solana](https://solana.com/), que oferece alta eficiência, segurança e escalabilidade para transações financeiras, além de suporte a contratos inteligentes para automação de processos.
+- **Linguagem de Programação**: Implementado em [TypeScript](https://www.typescriptlang.org/), garantindo uma base de código robusta e com tipagem estática.
+- **IA**: Desenvolvida em [Python](https://www.python.org/), utilizando bibliotecas de machine learning como [scikit-learn](https://scikit-learn.org/) para o treinamento e previsão de perfis de investidor.
+- **API**: Arquitetura construída com [GraphQL](https://graphql.org/), proporcionando consultas flexíveis e precisas para os dados.
+- **Framework**: Utiliza [ApolloServer](https://www.apollographql.com/docs/apollo-server/) para gerenciar as requisições GraphQL de maneira eficiente e modular.
 
 ---
 
-### 3. Prediction 🎯
+### Como Começar 🚀
 
-Predictions and recommendations are generated by AI through the analysis of the provided data, allowing for informed decisions based on patterns identified in the customer profiles.
-
-#### 3.1 Customer Data Submission
-Make an HTTP request with the customer data to obtain the investor profile. The AI will process the information and return the customer’s investor type in the request response.
-
-#### 3.2 Prediction Reading
-After submission, the AI will generate predictions based on the provided data. The bank can make an HTTP request to directly receive the customer's investor type, ensuring personalized investment recommendations.
+Entre em contato conosco para integrar a **36'Oracle** ao seu sistema bancário e aproveitar as vantagens de um processo automatizado e inteligente para gerenciamento de dados e investimentos. Com o blockchain implementado, você terá **total visibilidade e segurança** sobre as transações e recomendações. 
 
 ---
 
-### 4. Conclusion 🏁
-Upon completion, you will have the processed customer data, the investor type returned via HTTP, and all transactions recorded on the blockchain, providing **total transparency and reliability**.
+## Como Utilizar 👨‍💻👩‍💻
+
+### 1. Login e Autenticação 🔑
+A autenticação será realizada por meio de um **token** gerado pela equipe de suporte da **36'Oracle**, enviado via e-mail com as credenciais necessárias para o acesso. Assim que receber as credenciais, acesse o nosso [portal de login](www.google.com.br) e faça o login, assim podendo ter acesso completo a todas as funcionalidades.
+
+### 2. Treinamento da IA 🤖
+O treinamento da IA é totalmente automatizado e processado pela **API** com base nos dados fornecidos. Os dados são inicialmente enviados no formato **XML**, mas são convertidos em **JSON** para melhor compatibilidade e iteração com o sistema. Essa conversão melhora a eficiência do processamento de dados, além de facilitar a integração com outras ferramentas e sistemas. Para mais detalhes sobre o processo de treinamento e fluxo de dados, consulte a seção [Como Funciona](#como-funciona).
+
+#### 2.1. Envio de Dados
+Submeta a base de dados de seus clientes em um arquivo no formato **XML**, com as tags correspondentes às colunas adequadamente definidas. Esse arquivo será utilizado para alimentar o modelo da IA, que tratará os dados e ajustará seu algoritmo de **machine learning** para realizar a **classificação supervisionada** dos clientes. Todo o processo de envio, treinamento e ajustes será registrado na **blockchain Solana**, proporcionando **immutabilidade**, **auditabilidade** e **segurança** em cada transação de dados.
+
+#### 2.2. Seleção de Features
+Escolha as **features** (atributos) que deseja utilizar para melhorar a performance do modelo de IA. O processo de **feature selection** é fundamental para otimizar o treinamento do modelo, garantindo que apenas os atributos mais relevantes sejam considerados, reduzindo a dimensionalidade e aumentando a eficiência das previsões.
+
+#### 2.3. Conclusão
+Após a seleção de **features** e o treinamento do modelo, a IA processará os dados, categorizando os clientes de acordo com os perfis de investidor. Todos os resultados do processo estarão disponíveis para verificação no **ledger** da **blockchain Solana**, garantindo **transparência total** em todas as fases.
 
 ---
 
-## How It Works 🔧
+### 3. Previsão 🎯
 
-### 1. Data Reception 📦
+As previsões e recomendações são geradas pela IA com base na análise dos dados fornecidos, utilizando **modelos preditivos**. Esses modelos são capazes de identificar padrões nos perfis dos clientes e fornecer **insights acionáveis** para recomendações personalizadas e estratégicas.
 
-The data reception process involves sending a list of tags and a **[XML](https://www.w3.org/XML/)** file containing a dataframe. The API processes this information as follows:
+#### 3.1 Envio dos Dados do Cliente
 
-- The **tags** are used to define the columns of the dataframe.
-- The content of the **XML** file is transformed into a dataframe, using the tags as column headers.
+Para solicitar o perfil de investidor de um cliente, realize uma requisição **HTTP** utilizando o framework **GraphQL**. O endpoint da API processará as informações enviadas e retornará o perfil de investidor categorizado pela IA, com base nos dados disponíveis.
 
-Once the dataframe is generated, the API begins training the **[RandomForest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)** model, using the tag-derived columns as attributes and the XML data as content. Every step of the processing is recorded on the blockchain to ensure that the entire flow is transparent and auditable.
+#### 3.2 Geração e Leitura de Previsão
 
-### 2. AI Model Training 🧠
-
-AI training occurs automatically after data reception and dataframe preparation. The **RandomForest** model is adjusted based on the provided data, identifying patterns and creating a predictive model. With each new dataset submitted, the model is refined and optimized to improve prediction accuracy, with all adjustments and results stored on the blockchain.
-
-- The AI learns from the provided data, adjusting its parameters based on the information contained in the dataframe.
-- The model is evaluated to ensure proper functionality.
-- If the model's performance meets accuracy criteria, it is used for future predictions, and the investor profile is returned via HTTP, with all performance records stored on the blockchain.
+Após o envio dos dados do cliente, a IA analisará as informações utilizando algoritmos de **machine learning**, como **Random Forest**, para gerar previsões detalhadas sobre o perfil de investidor. O sistema retornará essas previsões em tempo real via **API**, permitindo que o banco ofereça recomendações personalizadas de investimentos com maior precisão e credibilidade, otimizando a estratégia de acordo com o perfil de risco de cada cliente.
 
 ---
 
-### 4. Categorization and Prediction 🔢
+### 4. Conclusão 🏁
 
-Categorization and prediction are dynamically performed by the model. AI identifies patterns based on training and validation data, optimizing the process with **RandomForest** to minimize errors and maximize accuracy. Each generated result is recorded on the blockchain, ensuring **total transparency**.
-
----
-
-### 5. Request Customer Investor Type 📝
-Make an HTTP request to obtain all the information about the customer's investor profile. The data is processed by AI using the decision tree system, ensuring an accurate and personalized classification.
+Ao finalizar o processo, você terá acesso aos dados dos clientes, com o perfil de investidor retornado via requisição **HTTP** e todas as transações de dados registradas no **blockchain Solana**, garantindo **transparência**, **integridade** e **confiança** nas operações realizadas.
 
 ---
 
-## Use Case Examples 💡:
+## Como Funciona 🔧
 
-### AI Training
-The entire AI training process, including the provided data and model stages, is recorded on the blockchain, ensuring that the entire history is immutable and transparent.
+### 1. Recepção dos Dados 📦
 
-### Data Submission
-Data submission for training and prediction can be audited through the hashes generated by the blockchain, ensuring data integrity.
+O processo de recepção de dados começa com o envio de um arquivo no formato **[XML](https://www.w3.org/XML/)**, que contém um **dataframe** estruturado de acordo com as tags fornecidas. A API da **36'Oracle** realiza o processamento desse arquivo da seguinte forma:
 
-### Data Processing
-The data processed by AI can be verified and audited on the blockchain, ensuring that the information is correct and has not been altered.
+- As **tags** especificadas são usadas para mapear as colunas do dataframe.
+- O conteúdo do arquivo **XML** é transformado em um **dataframe** com base nas tags, que atuam como cabeçalhos das colunas.
+- Após a transformação do **XML** em **JSON**, o conteúdo é otimizado para compatibilidade com a API e modelos de machine learning.
 
-### Customer Categorization
-Customer categorization performed by AI can be tracked and verified on the blockchain, ensuring that the classification was done accurately and auditable.
+Com o **dataframe** gerado e os dados convertidos em **JSON**, a API inicia o processo de treinamento do modelo de IA baseado no algoritmo **[RandomForest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)**. As colunas derivadas das tags são utilizadas como **features** (atributos), enquanto os dados em **JSON** formam o conteúdo principal para a análise.
+
+### 2. Treinamento do Modelo de IA e Criação do Modelo Preditivo 🧠
+
+O treinamento da IA é realizado automaticamente após a recepção dos dados e a preparação do **dataframe**. O modelo **RandomForest** é ajustado com base nos dados fornecidos, identificando padrões e criando um modelo preditivo robusto a partir do **JSON** gerado.
+
+O processo de treinamento segue as seguintes etapas técnicas:
+- **Pré-processamento dos dados**: As variáveis categóricas são codificadas (**Label Encoding** ou **One-Hot Encoding**), enquanto os dados numéricos são normalizados (**Standardization**), garantindo que o modelo processe corretamente diferentes tipos de dados.
+- **Seleção de características (features)**: A técnica de **Eliminação Recursiva de Recursos (RFE)** é aplicada para selecionar as **features** mais relevantes, maximizando a eficiência do treinamento e a precisão das previsões.
+- **Treinamento e Ajuste**: O modelo é ajustado utilizando os dados de entrada e validado com métricas de desempenho, como **accuracy**, **precision**, e **recall**. O objetivo é atingir uma acurácia mínima de 70%.
+- **Registro no Blockchain**: Cada ajuste do modelo, assim como os resultados de treinamento, são registrados na **blockchain Solana** para garantir **transparência**, **segurança** e **auditabilidade**.
+
+---
+
+### 3. Categorização e Previsão 🔢
+
+A categorização dos perfis de investidor e a previsão são realizadas dinamicamente pela IA, com base no modelo treinado. A IA identifica padrões utilizando dados de treinamento e validação, aplicando o algoritmo **RandomForest** para reduzir erros e maximizar a precisão das previsões.
+
+- Cada previsão gerada pelo modelo é registrada na **blockchain** para assegurar **transparência** e **integridade**.
+- As previsões incluem o perfil de investidor do cliente, permitindo decisões de investimento personalizadas com base em análises detalhadas.
+
+### 4. Solicitação do Perfil de Investidor do Cliente 📝
+
+Para obter o perfil de investidor de um cliente, basta realizar uma requisição **HTTP** utilizando a API. A IA processa os dados enviados em tempo real, aplicando o modelo de decisão baseado em **árvores de decisão** (como o **RandomForest**), e classifica com precisão o perfil de investidor do cliente.
+
+- A classificação é personalizada para cada cliente, garantindo que as recomendações de investimento sejam adequadas ao perfil individual.
+- Todos os dados processados e as previsões geradas são registrados no **blockchain** para garantir um processo seguro, auditável e transparente.
+
+---
+
+Este processo garante que todas as operações realizadas pela **36'Oracle** sejam totalmente seguras, auditáveis e transparentes, com o uso de tecnologias avançadas como **machine learning**, **blockchain** e **RandomForest** para fornecer previsões precisas e eficientes.
+
+---
+
+## Exemplos de Uso 💡:
+
+### Treinamento da IA 
+Explicação detalhada sobre como ocorre o treinamento.
+
+### Envio de Dados
+Processo de envio de dados e transformação de XML para JSON.
+
+### Tratamento de Dados 
+Processamento e tratamento dos dados com foco em segurança e auditabilidade no blockchain.
+
+### Categorização dos Clientes
+Como a IA realiza a categorização dos perfis de investidor e como isso impacta as recomendações.
+
+---
