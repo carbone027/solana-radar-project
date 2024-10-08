@@ -1,6 +1,13 @@
 # 36'Oracle - Introdução 🚀
+```
+FALTA COLOCAR:
 
-A **36'Oracle** é uma API avançada projetada para otimizar a gestão de dados bancários utilizando **blockchain** com a plataforma **[Solana](https://solana.com/)**, que proporciona **alta eficiência, escalabilidade e segurança**. A tecnologia blockchain garante que os dados e transações sejam armazenados de maneira imutável e transparente, com cada registro disponível para verificação a qualquer momento. Aliando blockchain à **inteligência artificial**, a API oferece funcionalidades robustas para o tratamento de dados, categorização de clientes, previsão de perfis de investidor e recomendações personalizadas. 
+- formartar banco e dados recebidos 
+- fotinhas do código 
+- HTTP
+```
+
+A **36'Oracle** é uma API avançada projetada para otimizar a gestão de dados bancários utilizando **blockchain** com a plataforma **[Cartesi](https://cartesi.io/)**, que proporciona **alta eficiência, escalabilidade e segurança**. A tecnologia blockchain garante que os dados e transações sejam armazenados de maneira imutável e transparente, com cada registro disponível para verificação a qualquer momento. Aliando blockchain à **inteligência artificial**, a API oferece funcionalidades robustas para o tratamento de dados, categorização de clientes, previsão de perfis de investidor e recomendações personalizadas. 
 
 ### Principais Funcionalidades
 
@@ -15,7 +22,7 @@ A API foi projetada para instituições financeiras que buscam **otimizar suas o
 
 ### Tecnologias Utilizadas 🛠️
 
-- **Plataforma blockchain**: Desenvolvido utilizando a [Solana](https://solana.com/), que oferece alta eficiência, segurança e escalabilidade para transações financeiras, além de suporte a contratos inteligentes para automação de processos.
+- **Plataforma blockchain**: Desenvolvido utilizando a **[Cartesi](https://cartesi.io/)**, que oferece alta eficiência, segurança e escalabilidade para transações financeiras, além de suporte a contratos inteligentes para automação de processos.
 - **Linguagem de Programação**: Implementado em [TypeScript](https://www.typescriptlang.org/), garantindo uma base de código robusta e com tipagem estática.
 - **IA**: Desenvolvida em [Python](https://www.python.org/), utilizando bibliotecas de machine learning como [scikit-learn](https://scikit-learn.org/) para o treinamento e previsão de perfis de investidor.
 - **API**: Arquitetura construída com [GraphQL](https://graphql.org/), proporcionando consultas flexíveis e precisas para os dados.
@@ -32,7 +39,7 @@ Entre em contato conosco para integrar a **36'Oracle** ao seu sistema bancário 
 ## Como Utilizar 👨‍💻👩‍💻
 
 ### 1. Login e Autenticação 🔑
-A autenticação será realizada por meio de um **token** gerado pela equipe de suporte da **36'Oracle**, enviado via e-mail com as credenciais necessárias para o acesso. Assim que receber as credenciais, acesse o nosso [portal de login](www.google.com.br) e faça o login, assim podendo ter acesso completo a todas as funcionalidades.
+A autenticação será realizada por meio de uma senha gerado pela equipe de suporte da **36'Oracle**, enviado via e-mail com as credenciais necessárias para o acesso. Assim que receber as credenciais, acesse o nosso [portal de login](www.google.com.br) e faça o login, assim podendo ter acesso completo a todas as funcionalidades.
 
 ---
 
