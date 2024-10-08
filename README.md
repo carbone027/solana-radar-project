@@ -5,6 +5,7 @@ FALTA COLOCAR:
 - formartar banco e dados recebidos 
 - fotinhas do código 
 - HTTP
+- Traduzir
 ```
 
 A **36'Oracle** é uma API avançada projetada para otimizar a gestão de dados bancários utilizando **blockchain** com a plataforma **[Cartesi](https://cartesi.io/)**, que proporciona **alta eficiência, escalabilidade e segurança**. A tecnologia blockchain garante que os dados e transações sejam armazenados de maneira imutável e transparente, com cada registro disponível para verificação a qualquer momento. Aliando blockchain à **inteligência artificial**, a API oferece funcionalidades robustas para o tratamento de dados, categorização de clientes, previsão de perfis de investidor e recomendações personalizadas. 
