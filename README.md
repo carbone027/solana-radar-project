@@ -34,6 +34,8 @@ Entre em contato conosco para integrar a **36'Oracle** ao seu sistema bancário 
 ### 1. Login e Autenticação 🔑
 A autenticação será realizada por meio de um **token** gerado pela equipe de suporte da **36'Oracle**, enviado via e-mail com as credenciais necessárias para o acesso. Assim que receber as credenciais, acesse o nosso [portal de login](www.google.com.br) e faça o login, assim podendo ter acesso completo a todas as funcionalidades.
 
+---
+
 ### 2. Treinamento da IA 🤖
 O treinamento da IA é totalmente automatizado e processado pela **API** com base nos dados fornecidos. Os dados são inicialmente enviados no formato **XML**, mas são convertidos em **JSON** para melhor compatibilidade e iteração com o sistema. Essa conversão melhora a eficiência do processamento de dados, além de facilitar a integração com outras ferramentas e sistemas. Para mais detalhes sobre o processo de treinamento e fluxo de dados, consulte a seção [Como Funciona](#como-funciona).
 
@@ -80,6 +82,8 @@ O processo de recepção de dados começa com o envio de um arquivo no formato *
 
 Com o **dataframe** gerado e os dados convertidos em **JSON**, a API inicia o processo de treinamento do modelo de IA baseado no algoritmo **[RandomForest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)**. As colunas derivadas das tags são utilizadas como **features** (atributos), enquanto os dados em **JSON** formam o conteúdo principal para a análise.
 
+---
+
 ### 2. Treinamento do Modelo de IA e Criação do Modelo Preditivo 🧠
 
 O treinamento da IA é realizado automaticamente após a recepção dos dados e a preparação do **dataframe**. O modelo **RandomForest** é ajustado com base nos dados fornecidos, identificando padrões e criando um modelo preditivo robusto a partir do **JSON** gerado.
@@ -99,14 +103,14 @@ A categorização dos perfis de investidor e a previsão são realizadas dinamic
 - Cada previsão gerada pelo modelo é registrada na **blockchain** para assegurar **transparência** e **integridade**.
 - As previsões incluem o perfil de investidor do cliente, permitindo decisões de investimento personalizadas com base em análises detalhadas.
 
+---
+
 ### 4. Solicitação do Perfil de Investidor do Cliente 📝
 
 Para obter o perfil de investidor de um cliente, basta realizar uma requisição **HTTP** utilizando a API. A IA processa os dados enviados em tempo real, aplicando o modelo de decisão baseado em **árvores de decisão** (como o **RandomForest**), e classifica com precisão o perfil de investidor do cliente.
 
 - A classificação é personalizada para cada cliente, garantindo que as recomendações de investimento sejam adequadas ao perfil individual.
 - Todos os dados processados e as previsões geradas são registrados no **blockchain** para garantir um processo seguro, auditável e transparente.
-
----
 
 Este processo garante que todas as operações realizadas pela **36'Oracle** sejam totalmente seguras, auditáveis e transparentes, com o uso de tecnologias avançadas como **machine learning**, **blockchain** e **RandomForest** para fornecer previsões precisas e eficientes.
 
