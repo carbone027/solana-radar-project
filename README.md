@@ -85,11 +85,11 @@ A integração da IA com a **36'Oracle** permite que os bancos façam previsões
 
   ### 3. Envio de dados sobre o perfil
   
-  ### 4. Categorização
-
-  ### 5. Previsão
+  ### 4. Categorização e previsão
+  Feito dinamicamente pelo modelo, vendo por meio do conjuto de treino ele vai conseguir identificar o padrao e atravez da geração de florestas aleaotrias ele minimiza os erros das aplicacoes e consegue unificar os bons resultados que as multplicas arvores geraram.
   
   ### 6. Recomendação 
+  Usando a categoria e previsão, acha a melhor forma de investimento para aquele cliente.
   
 ## Exemplos de uso 
 
