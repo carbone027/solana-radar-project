@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input de XML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        textarea, input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Processar XML</h1>
+<label for="xmlContent">XML Content:</label>
+<textarea id="xmlContent" rows="5" placeholder="<root><tag1>value1</tag1></root>"></textarea>
+
+<label for="tags">Tags (separadas por vírgula):</label>
+<input type="text" id="tags" placeholder="tag1,tag2" />
+
+<button id="submitButton">Enviar</button>
+
+<h2>Resultado:</h2>
+<pre id="result"></pre>
+
+<script>
+    document.getElementById('submitButton').onclick = async function() {
+        const xmlContent = document.getElementById('xmlContent').value;
+        const tags = document.getElementById('tags').value.split(',').map(tag => tag.trim());
+
+        const response = await fetch('http://localhost:4000/', { // Substitua pela URL da sua API
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                query: `
+                    mutation {
+                        filterAndConvertXml(input: {
+                            xmlContent: "${xmlContent}",
+                            tags: ${JSON.stringify(tags)}
+                        }) {
+                            success
+                            message
+                            data {
+                                tag
+                                value
+                            }
+                        }
+                    }
+                `
+            }),
+        });
+
+        const result = await response.json();
+        document.getElementById('result').textContent = JSON.stringify(result, null, 2);
+    };
+</script>
+
+</body>
+</html>
