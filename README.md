@@ -1,6 +1,6 @@
-# 36'Oracle - API de gestão de dados de dados bancários!
+# 36'Oracle
 
-A 36'Oracle é uma API desenvolvida para otimizar a gestão de dados bancários por meio da tecnologia blockchain, garantindo segurança e transparência no processamento de informações. A API permite que bancos tratem grandes volumes de dados, categorizem seus clientes de forma eficiente, identifiquem o perfil de investidor de cada cliente e ofereçam recomendações personalizadas de investimento.
+A 36'Oracle é uma API desenvolvida para otimizar a gestão de dados bancários por meio da tecnologia blockchain, utilizando a plataforma Solana para garantir segurança, escalabilidade e alta eficiência no processamento de informações. A API permite que bancos tratem grandes volumes de dados, categorizem seus clientes de forma eficiente, identifiquem o perfil de investidor de cada cliente e ofereçam recomendações personalizadas de investimento.
 
 Ao integrar a 36'Oracle, as instituições financeiras podem automatizar processos essenciais, obtendo insights baseados em inteligência artificial para tomar decisões estratégicas. Além disso, a categorização detalhada dos clientes e a previsão de comportamentos financeiros possibilitam uma abordagem personalizada, otimizando os serviços oferecidos e aumentando a satisfação dos clientes.
 
