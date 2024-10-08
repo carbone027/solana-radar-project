@@ -147,12 +147,15 @@ body{
 
 .loginAll {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
+    align-items: center;
+    justify-items: center;
     height: 100vh;
     width: 100vw;
 }
+
 .loginLeft {
     background-color: #1B1A55;
     width: 70vw;
@@ -172,17 +175,35 @@ body{
     flex-direction: column;
     width: 600px;
     height: 640px;
-    align-items: start;
+    align-items: center;
+    justify-items: center;
     border-radius: 24px;
     z-index: 0;
     background-color: azure;
     padding: 24px;
 }
 
+.loginCardTop {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: #242424;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 32px;
+}
+
 .loginCardTop input{
     background-color: transparent;
     border-radius: 4px;
     padding: 8px;
-    
 }
 
+.loginCardBottom {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: #242424;
+    align-items: center;
+    justify-items: center;
+}
