@@ -88,13 +88,11 @@ O processo de recepção de dados começa com o envio de um arquivo no formato *
 - O conteúdo do arquivo **XML** é transformado em um **dataframe** com base nas tags, que atuam como cabeçalhos das colunas.
 - Após a transformação do **XML** em **JSON**, o conteúdo é otimizado para compatibilidade com a API e modelos de machine learning.
 
-Com o **dataframe** gerado e os dados convertidos em **JSON**, a API inicia o processo de treinamento do modelo de IA baseado no algoritmo **[RandomForest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)**. As colunas derivadas das tags são utilizadas como **features** (atributos), enquanto os dados em **JSON** formam o conteúdo principal para a análise.
-
 ---
 
 ### 2. Treinamento do Modelo de IA e Criação do Modelo Preditivo 🧠
 
-O treinamento da IA é realizado automaticamente após a recepção dos dados e a preparação do **dataframe**. O modelo **RandomForest** é ajustado com base nos dados fornecidos, identificando padrões e criando um modelo preditivo robusto a partir do **JSON** gerado.
+Com o **dataframe** gerado, as colunas derivadas das tags são utilizadas como **features** (atributos), enquanto os dados convertidos em **JSON** formam o conteúdo principal para a análise. A API, então, inicia automaticamente o processo de treinamento da IA, utilizando o algoritmo **[RandomForest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)**. O modelo é ajustado com base nos dados fornecidos, identificando padrões e criando um modelo preditivo robusto a partir do **JSON** gerado e preparado no **dataframe**.
 
 O processo de treinamento segue as seguintes etapas técnicas:
 - **Pré-processamento dos dados**: As variáveis categóricas são codificadas (**Label Encoding** ou **One-Hot Encoding**), enquanto os dados numéricos são normalizados (**Standardization**), garantindo que o modelo processe corretamente diferentes tipos de dados.
