@@ -3,67 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input de XML</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        label {
-            display: block;
-            margin: 10px 0 5px;
-        }
-        textarea, input {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        button {
-            padding: 10px 15px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <title>Teste de Upload de XML</title>
 </head>
 <body>
+    <h1>Upload de Arquivo XML</h1>
+    
+    <form id="upload-form">
+        <label for="file">Escolha um arquivo XML:</label>
+        <input type="file" id="file" name="file" accept=".xml" required><br><br>
+        
+        <label for="features">Features (separadas por vírgula):</label>
+        <input type="text" id="features" name="features" placeholder="feature1, feature2" required><br><br>
+        
+        <button type="submit">Enviar</button>
+    </form>
 
-<h1>Processar XML</h1>
-<label for="xmlContent">XML Content:</label>
-<textarea id="xmlContent" rows="5" placeholder="<root><tag1>value1</tag1></root>"></textarea>
+    <h2>Resultado</h2>
+    <pre id="result"></pre>
 
-<label for="tags">Tags (separadas por vírgula):</label>
-<input type="text" id="tags" placeholder="tag1,tag2" />
+    <script>
+        document.getElementById('upload-form').addEventListener('submit', async function(event) {
+            event.preventDefault();
 
-<button id="submitButton">Enviar</button>
+            const formData = new FormData();
+            const fileInput = document.getElementById('file');
+            const featuresInput = document.getElementById('features');
 
-<h2>Resultado:</h2>
-<pre id="result"></pre>
+            // Adiciona o arquivo ao FormData
+            formData.append('file', fileInput.files[0]);
+            
+            // Aqui garantimos que as features sejam um array de strings, removendo espaços em branco
+            const featuresArray = featuresInput.value.split(',').map(feature => feature.trim()).filter(feature => feature); // Remove elementos vazios
 
-<script>
-    document.getElementById('submitButton').onclick = async function() {
-        const xmlContent = document.getElementById('xmlContent').value;
-        const tags = document.getElementById('tags').value.split(',').map(tag => tag.trim());
+            if (featuresArray.length === 0) {
+                console.error('Nenhuma feature fornecida!');
+                return;
+            }
 
-        const response = await fetch('http://localhost:4000/', { // Substitua pela URL da sua API
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
+            // Faz o upload do arquivo
+            const uploadResponse = await fetch('http://localhost:4000/upload', {
+                method: 'POST',
+                body: formData
+            });
+
+            const uploadData = await uploadResponse.json();
+            const filename = uploadData.filename; // Obtemos o nome do arquivo da resposta do upload
+
+            // Aqui você deve criar a mutação GraphQL
+            const mutation = {
                 query: `
-                    mutation {
-                        filterAndConvertXml(input: {
-                            xmlContent: "${xmlContent}",
-                            tags: ${JSON.stringify(tags)}
-                        }) {
+                    mutation filterAndConvertXml($features: [String!]!, $file: String!) {
+                        filterAndConvertXml(features: $features, file: $file) {
                             success
                             message
                             data {
@@ -72,14 +62,79 @@
                             }
                         }
                     }
-                `
-            }),
+                `,
+                variables: {
+                    features: featuresArray, // Aqui você usa o featuresArray já filtrado
+                    file: filename // Usando o filename obtido
+                }
+            };
+
+            console.log('Variáveis a serem enviadas:', {
+                features: featuresArray, // Usando o array filtrado
+                file: filename // Usando o filename
+            });
+
+            const graphQLResponse = await fetch('http://localhost:4000/graphql', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(mutation)
+            });
+
+            const resultData = await graphQLResponse.json();
+            console.log('Resposta do GraphQL:', resultData); // Log da resposta do GraphQL
+
+            // Exibe os erros ou o resultado retornado para depuração
+            if (resultData.errors) {
+                console.error('Erros na requisição:', resultData.errors);
+                document.getElementById('result').textContent = 'Erro: ' + resultData.errors[0].message;
+            } else {
+                const resultElement = document.getElementById('result');
+                
+                // Limpa o conteúdo anterior
+                const newTable = document.createElement('table');
+                newTable.style.width = '100%';
+                newTable.style.borderCollapse = 'collapse';
+                
+                // Adiciona cabeçalho da tabela
+                const headerRow = document.createElement('tr');
+                const headerTag = document.createElement('th');
+                const headerValue = document.createElement('th');
+                headerTag.textContent = 'Tag';
+                headerValue.textContent = 'Value';
+                headerTag.style.border = '1px solid #000';
+                headerValue.style.border = '1px solid #000';
+                headerRow.appendChild(headerTag);
+                headerRow.appendChild(headerValue);
+                newTable.appendChild(headerRow);
+                
+                // Processa os dados e adiciona as linhas na tabela
+                resultData.data.forEach(item => {
+                    const row = document.createElement('tr');
+                    const tagCell = document.createElement('td');
+                    const valueCell = document.createElement('td');
+
+                    // Limpa o valor removendo quebras de linha e espaços em branco
+                    const cleanedValue = item.value.replace(/\s+/g, ' ').trim();
+
+                    tagCell.textContent = item.tag;
+                    valueCell.textContent = cleanedValue;
+
+                    tagCell.style.border = '1px solid #000';
+                    valueCell.style.border = '1px solid #000';
+                    row.appendChild(tagCell);
+                    row.appendChild(valueCell);
+                    newTable.appendChild(row);
+                });
+
+                // Adiciona a nova tabela ao elemento de resultados
+                resultElement.innerHTML = ''; // Limpa o conteúdo anterior
+                resultElement.appendChild(newTable);
+            }
+
         });
 
-        const result = await response.json();
-        document.getElementById('result').textContent = JSON.stringify(result, null, 2);
-    };
-</script>
-
+    </script>
 </body>
 </html>

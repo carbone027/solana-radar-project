@@ -4,7 +4,7 @@
 # -----------------------------------------------
 
 type Mutation {
-  filterAndConvertXml(input: TagInput!): TagValidationResult!
+  filterAndConvertXml(features: [String!]!, file: String!): TagValidationResult!
 }
 
 type Query {
@@ -14,11 +14,6 @@ type Query {
 type TagData {
   tag: String!
   value: String!
-}
-
-input TagInput {
-  tags: [String!]! = []
-  xmlContent: String! = ""
 }
 
 type TagValidationResult {
