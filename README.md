@@ -25,7 +25,7 @@ A API foi projetada para instituições financeiras que buscam **otimizar suas o
 
 ### Como Começar 🚀
 
-Entre em contato conosco para integrar a **36'Oracle** ao seu sistema bancário e aproveitar as vantagens de um processo automatizado e inteligente para gerenciamento de dados e investimentos. Com o blockchain implementado, você terá **total visibilidade e segurança** sobre as transações e recomendações. 
+Entre em contato conosco por nosso e-mail, contact.36oracle@gmail.com, para integrar a **36'Oracle** ao seu sistema bancário e aproveitar as vantagens de um processo automatizado e inteligente para gerenciamento de dados e investimentos. Com o blockchain implementado, você terá **total visibilidade e segurança** sobre as transações e recomendações. 
 
 ---
 
@@ -109,7 +109,6 @@ Este processo garante que todas as operações realizadas pela **36'Oracle** sej
 # Exemplos de Uso 💡:
 
 ### Treinamento da IA 
-
 
 ### Envio de Dados
 
