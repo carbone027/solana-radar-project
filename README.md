@@ -40,15 +40,15 @@ To integrate **36'Oracle** into your banking system, contact us at **contact.36o
 
 Ensure **NPM** is installed. In the terminal, run the command:
 
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 This command will install all the necessary dependencies. To start the development environment, use:
 
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 ---
 
