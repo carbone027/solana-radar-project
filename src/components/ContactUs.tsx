@@ -6,7 +6,7 @@ interface ContactUsProps {
 
 const ContactUs = ({ title }: ContactUsProps) => {
     return (
-        <div className='contact' id='CONTACT'>
+        <div className='contact' id='contact.36oracle@gmail.com'>
             <h4>{title}</h4>
         </div>
     );
