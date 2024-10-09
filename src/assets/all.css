@@ -13,6 +13,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -46,6 +47,7 @@ body{
 }
 
 
+
 /* ----------------- Header ----------------- */
 
 .header{
@@ -57,23 +59,35 @@ body{
     align-items: center;
     height: 64px;
     position: fixed;
-    background-color: #242424;
+    background-color: transparent;
     width: 100%;
+    font-family: 'Ropa Sans';
+    padding: 12px 12px;
 }
 
 .header button{
-    background-color: aqua;
+    background-color: #9290C3;
+    font-family: 'Ropa Sans';
+    font-size: 24px;
+    line-height: 12px;
+    border-radius: 16px;
 }
 
 .header img {
-    background-color: aqua;
+    width: 42px;
+    height: 42px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #E6E4F5
 }
 
 .headerLinks {
     display: flex;
     list-style-type: none;
     flex-direction: row;
-    gap: 24px;
+    gap: 82px;
     align-items: center;
     width: auto;
 }
@@ -88,14 +102,12 @@ body{
 
 .hero {
     background: linear-gradient(180deg, #1B1A55 0%, #070F2B 100%);
-    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 300px;
-    padding-top: 64px;
-    padding-bottom: 24px;
+    margin-bottom: 200px;
+    padding-top: 148px;
 }
 
 .heroTexts {
@@ -114,21 +126,17 @@ body{
     font-style: 'Ropa Sans';
 }
 
-.spline {
-    width: 100px;
-    height: 100px;
-
-}
-
 /* ----------------- WhatAreWe ----------------- */
 
 .waw {
+    padding-top: 450px;
     height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 120px;
+    margin-bottom: 400px;
+    text-align: center;
 }
 
 .ropa {
@@ -148,7 +156,7 @@ body{
     list-style-type: none;
     font-size: 32px;
     font-style: 'Ropa Sans';
-    padding-top:40px
+    padding-top:40px;
 }
 
 .wawDescription li {
@@ -160,12 +168,13 @@ body{
 /* ----------------- WhoAreWe ----------------- */
 
 .wowAll {
+    padding-top: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 80vh;
-    margin-bottom: 120px;
+    margin-bottom: 400px;
 }
 
 .wowA {
@@ -179,6 +188,7 @@ body{
     font-family: "Archivo";
     font-size:64px;
     font-weight: bold;
+    padding-bottom: 60px;
 }
 
 .wow {
@@ -198,19 +208,31 @@ body{
     padding-bottom: 24px;
     font-family: 'Ropa Sans';
     font-size: 35px;
+    width: 80%;
+    margin-left: 48px;
 }
 
 
 
 /* ----------------- Contact ----------------- */
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 500px;
+    padding-top: 60px;
+}
 
 .contact h4 {
     font-family: 'Archivo';
     font-weight: 900;
-    font-size: 170;
-    margin-bottom: 120px;
+    font-size: 170px;
 }
 
+.contact p {
+    font-weight: bold;
+    padding-top: 60px;
+    font-size: xx-large;
+}
 
 
 /* ----------------- Login -----------------  */
@@ -303,3 +325,4 @@ body{
 .loginCardBottom a{
     color: #E6E4F5;
 }
+

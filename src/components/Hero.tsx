@@ -13,7 +13,8 @@ const Hero = ({  mainTitle, secondTitle }: HeroProps) => {
                 <h1>{mainTitle}</h1>
                 <h2>{secondTitle}</h2>
             </div>
-            <Spline className='spline' scene="https://prod.spline.design/3hRqS61U2Dy-xagM/scene.splinecode"/>
+            <Spline className='spline'
+            scene="https://prod.spline.design/3hRqS61U2Dy-xagM/scene.splinecode"/>
         </div>
     );
 }
