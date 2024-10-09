@@ -4,24 +4,18 @@ import '../assets/all.css';
 const LandingPage = () => {
   return (
     <div className='all'>
-      <Header 
-        logo='' 
+      <Header  
         sectionName1='WHAT ARE WE?' 
         sectionName2='WHO ARE WE?' 
         sectionName3='WANNA CONTACT?'
       />
-      <Hero 
-        Src='batatas.com.br' 
+      <Hero  
         mainTitle="36'ORACLE" 
         secondTitle='A NEW WAY OF SEEING MONEY' 
       />
       <WhatAreWe 
         title1='WHAT' 
         title2='ARE WE?' 
-        list1='A SYSTEM THAT RECIVES THE DATABASES SENT BY THE BANK' 
-        list2='STORES DATA VIA SOLANA BLOCKCHAIN' 
-        list3='USES AI TO CATEGORIZE PROFILES AND PREDICT BEHAVIORS' 
-        list4='PROVIDES VALUABLE INSIGHTS' 
         description='batatas' 
       />
       <WhoAreWe 

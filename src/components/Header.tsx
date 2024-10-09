@@ -2,13 +2,12 @@ import '../assets/all.css'
 import { useNavigate } from 'react-router-dom';
 
 interface HeaderProps {
-    logo: string;
     sectionName1: string;
     sectionName2: string;
     sectionName3: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ logo, sectionName1, sectionName2, sectionName3}) => {
+const Header: React.FC<HeaderProps> = ({ sectionName1, sectionName2, sectionName3}) => {
     const navigate = useNavigate();
 
     const handleLoginClick = () => {
@@ -18,13 +17,13 @@ const Header: React.FC<HeaderProps> = ({ logo, sectionName1, sectionName2, secti
     return (
 
     <nav className='header'>
-        <img src={logo}></img>
+        <img src='../assets/logolight.png'></img>
         <ul className='headerLinks'>
             <a href='#WAW'><li>{sectionName1}</li></a>
             <a href='#WOW'><li>{sectionName2}</li></a>
             <a href='#CONTACT'><li>{sectionName3}</li></a>
         </ul>
-        <button onClick={handleLoginClick}></button>
+        <button onClick={handleLoginClick}>LOGIN</button>
     </nav>
   )
 }
