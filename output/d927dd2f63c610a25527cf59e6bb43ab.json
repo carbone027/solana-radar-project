@@ -1,10 +1,30 @@
 [
   {
-    "tag": "age",
-    "value": "19, 17"
+      "tag": "AMT_INCOME_TOTAL",
+      "values": "486683, 275360, 300613, 440066, 453720, 33578, 750000, 520000, 620000, 400000, 80000, 90000"
   },
   {
-    "tag": "name",
-    "value": "João, José"
+      "tag": "AGE",
+      "values": "36, 44, 68, 66, 39, 41, 29, 52, 48, 37, 55, 30"
+  },
+  {
+      "tag": "CNT_DEPENDENTS",
+      "values": "3, 5, 2, 2, 2, 0, 4, 1, 3, 2, 0, 1"
+  },
+  {
+      "tag": "KNOWLEDGE_LEVEL",
+      "values": "médio, superior, mestrado, superior, sem escolaridade, superior, doutorado, técnico, médio, superior, mestrado, doutorado"
+  },
+  {
+      "tag": "INVESTMENT_HORIZON",
+      "values": "short, short, medium, long, medium, short, long, medium, short, long, short, medium"
+  },
+  {
+      "tag": "RISK_TOLERANCE",
+      "values": "high, high, high, high, high, medium, low, low, medium, high, medium, low"
+  },
+  {
+      "tag": "Investor_Type",
+      "values": "aggressive, aggressive, aggressive, aggressive, moderate, aggressive, conservative, moderate, aggressive, conservative, aggressive, moderate"
   }
 ]

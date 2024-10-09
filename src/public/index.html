@@ -1,55 +1,36 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de Upload de XML</title>
-</head>
-<body>
-    <h1>Upload de Arquivo XML</h1>
-    
-    <form id="upload-form">
-        <label for="file">Escolha um arquivo XML:</label>
-        <input type="file" id="file" name="file" accept=".xml" required><br><br>
-        
-        <label for="features">Features (separadas por vírgula):</label>
-        <input type="text" id="features" name="features" placeholder="feature1, feature2" required><br><br>
-        
-        <button type="submit">Enviar</button>
-    </form>
+import React, { useState } from 'react';
 
-    <h2>Resultado</h2>
-    <pre id="result"></pre>
+function Cluster() {
+    const [file, setFile] = useState<File | null>(null);
+    const [features, setFeatures] = useState('');
+    const [result, setResult] = useState('');
 
-    <script>
-        document.getElementById('upload-form').addEventListener('submit', async function(event) {
-            event.preventDefault();
+    const handleSubmit = async (event: React.FormEvent) => {
+        event.preventDefault();
 
-            const formData = new FormData();
-            const fileInput = document.getElementById('file');
-            const featuresInput = document.getElementById('features');
+        if (!file || features.trim() === '') {
+            console.error('Arquivo ou features não foram fornecidos!');
+            return;
+        }
 
-            // Adiciona o arquivo ao FormData
-            formData.append('file', fileInput.files[0]);
-            
-            // Aqui garantimos que as features sejam um array de strings, removendo espaços em branco
-            const featuresArray = featuresInput.value.split(',').map(feature => feature.trim()).filter(feature => feature); // Remove elementos vazios
+        const formData = new FormData();
+        formData.append('file', file);
 
-            if (featuresArray.length === 0) {
-                console.error('Nenhuma feature fornecida!');
-                return;
-            }
+        const featuresArray = features.split(',').map(feature => feature.trim()).filter(Boolean);
+        if (featuresArray.length === 0) {
+            console.error('Nenhuma feature válida fornecida!');
+            return;
+        }
 
-            // Faz o upload do arquivo
+        try {
             const uploadResponse = await fetch('http://localhost:4000/upload', {
                 method: 'POST',
                 body: formData
             });
 
             const uploadData = await uploadResponse.json();
-            const filename = uploadData.filename; // Obtemos o nome do arquivo da resposta do upload
+            const filename = uploadData.filename;
 
-            // Aqui você deve criar a mutação GraphQL
             const mutation = {
                 query: `
                     mutation filterAndConvertXml($features: [String!]!, $file: String!) {
@@ -64,16 +45,12 @@
                     }
                 `,
                 variables: {
-                    features: featuresArray, // Aqui você usa o featuresArray já filtrado
-                    file: filename // Usando o filename obtido
+                    features: featuresArray,
+                    file: filename
                 }
             };
 
-            console.log('Variáveis a serem enviadas:', {
-                features: featuresArray, // Usando o array filtrado
-                file: filename // Usando o filename
-            });
-
+            // Faz a requisição GraphQL
             const graphQLResponse = await fetch('http://localhost:4000/graphql', {
                 method: 'POST',
                 headers: {
@@ -83,58 +60,75 @@
             });
 
             const resultData = await graphQLResponse.json();
-            console.log('Resposta do GraphQL:', resultData); // Log da resposta do GraphQL
 
-            // Exibe os erros ou o resultado retornado para depuração
             if (resultData.errors) {
                 console.error('Erros na requisição:', resultData.errors);
-                document.getElementById('result').textContent = 'Erro: ' + resultData.errors[0].message;
+                setResult('Erro: ' + resultData.errors[0].message);
             } else {
-                const resultElement = document.getElementById('result');
-                
-                // Limpa o conteúdo anterior
-                const newTable = document.createElement('table');
-                newTable.style.width = '100%';
-                newTable.style.borderCollapse = 'collapse';
-                
-                // Adiciona cabeçalho da tabela
-                const headerRow = document.createElement('tr');
-                const headerTag = document.createElement('th');
-                const headerValue = document.createElement('th');
-                headerTag.textContent = 'Tag';
-                headerValue.textContent = 'Value';
-                headerTag.style.border = '1px solid #000';
-                headerValue.style.border = '1px solid #000';
-                headerRow.appendChild(headerTag);
-                headerRow.appendChild(headerValue);
-                newTable.appendChild(headerRow);
-                
-                // Processa os dados e adiciona as linhas na tabela
-                resultData.data.forEach(item => {
-                    const row = document.createElement('tr');
-                    const tagCell = document.createElement('td');
-                    const valueCell = document.createElement('td');
-
-                    // Limpa o valor removendo quebras de linha e espaços em branco
-                    const cleanedValue = item.value.replace(/\s+/g, ' ').trim();
-
-                    tagCell.textContent = item.tag;
-                    valueCell.textContent = cleanedValue;
-
-                    tagCell.style.border = '1px solid #000';
-                    valueCell.style.border = '1px solid #000';
-                    row.appendChild(tagCell);
-                    row.appendChild(valueCell);
-                    newTable.appendChild(row);
-                });
-
-                // Adiciona a nova tabela ao elemento de resultados
-                resultElement.innerHTML = ''; // Limpa o conteúdo anterior
-                resultElement.appendChild(newTable);
+                setResult(resultData.data.filterAndConvertXml.data);
             }
+        } catch (error) {
+            console.error('Erro durante a requisição:', error);
+            setResult('Erro ao realizar a operação.');
+        }
+    };
 
-        });
+    // Função para renderizar os resultados em uma tabela
+    const renderResult = () => {
+        if (!result || !Array.isArray(result)) return null;
 
-    </script>
-</body>
-</html>
+        return (
+            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+                <thead>
+                    <tr>
+                        <th style={{ border: '1px solid #000' }}>Tag</th>
+                        <th style={{ border: '1px solid #000' }}>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {result.map((item, index) => (
+                        <tr key={index}>
+                            <td style={{ border: '1px solid #000' }}>{item.tag}</td>
+                            <td style={{ border: '1px solid #000' }}>{item.value.trim()}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        );
+    };
+
+    return (
+        <div>
+            <h1>Upload de Arquivo XML</h1>
+            <form onSubmit={handleSubmit}>
+                <label htmlFor="file">Escolha um arquivo XML:</label>
+                <input
+                    type="file"
+                    id="file"
+                    name="file"
+                    accept=".xml"
+                    onChange={(e) => setFile(e.target.files ? e.target.files[0] : null)} 
+                    required
+                /><br /><br />
+
+                <label htmlFor="features">Features (separadas por vírgula):</label>
+                <input
+                    type="text"
+                    id="features"
+                    name="features"
+                    placeholder="feature1, feature2"
+                    value={features}
+                    onChange={(e) => setFeatures(e.target.value)}
+                    required
+                /><br /><br />
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <h2>Resultado</h2>
+            <pre>{renderResult()}</pre>
+        </div>
+    );
+}
+
+export default Cluster;

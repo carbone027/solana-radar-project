@@ -6,36 +6,53 @@ from sklearn.ensemble import RandomForestClassifier  # type: ignore
 from sklearn.feature_selection import RFE  # type: ignore
 from sklearn.metrics import accuracy_score  # type: ignore
 import m2cgen as m2c  # type: ignore
+import json
 
-# Função para converter JSON para pandas DataFrame
 def parse_json_to_dataframe(json_data):
-    df = pd.read_json(json_data)
+    # Inicializa um dicionário para armazenar os dados
+    data_dict = {}
+    
+    # Itera sobre cada item no JSON
+    for item in json_data:
+        # A tag será a chave e os valores serão divididos e convertidos em lista
+        tag = item['tag']
+        values = item['values'].split(', ')  # Divide os valores por vírgula e espaço
+        data_dict[tag] = values  # Adiciona ao dicionário
+        
+    # Cria o DataFrame a partir do dicionário
+    df = pd.DataFrame(data_dict)
+    
+    # Converte colunas numéricas (se houver) para tipos numéricos
+    numerical_cols = ['AMT_INCOME_TOTAL', 'AGE', 'CNT_DEPENDENTS']
+    for col in numerical_cols:
+        df[col] = pd.to_numeric(df[col], errors='coerce')  # Converte para numérico, trata erros como NaN
 
-    # Detecta automaticamente as colunas categóricas
+    # Para as colunas categóricas, podemos usar LabelEncoder, se necessário
     categorical_cols = df.select_dtypes(include=['object']).columns.tolist()
-
-    # Inicializa LabelEncoder para variáveis categóricas
     label_encoders = {}
     
-    # Converte variáveis categóricas em rótulos numéricos
+    # Inicializa LabelEncoder para variáveis categóricas
     for col in categorical_cols:
         le = LabelEncoder()
         df[col] = le.fit_transform(df[col])
         label_encoders[col] = le  # Armazena o codificador para uma possível transformação inversa
 
-    # Normaliza colunas numéricas
-    numerical_cols = df.select_dtypes(include=['int64', 'float64']).columns.tolist()
-    if numerical_cols:
-        scaler = StandardScaler()
-        df[numerical_cols] = scaler.fit_transform(df[numerical_cols])
-        print("Colunas normalizadas:", numerical_cols)
-    else:
-        print("Nenhuma coluna numérica para escalonar.")
-
     return df, label_encoders
 
 # Treina um modelo dinâmico Random Forest com RFE
-def train_dynamic_model(json_data, max_iterations=10):
+def train_dynamic_model(json_file_path, max_iterations=10):
+    # Carrega o arquivo JSON
+    try:
+        with open(json_file_path, 'r') as file:
+            json_data = json.load(file)
+    except FileNotFoundError:
+        print(f"Erro: O arquivo {json_file_path} não foi encontrado.")
+        return None
+    except json.JSONDecodeError:
+        print(f"Erro: O arquivo {json_file_path} não contém um JSON válido.")
+        return None
+
+    # Agora que temos o json_data, podemos processá-lo
     df, label_encoders = parse_json_to_dataframe(json_data)
 
     # Verifica a presença da coluna 'Investor_Type'
@@ -56,6 +73,7 @@ def train_dynamic_model(json_data, max_iterations=10):
     # Inicializa o modelo Random Forest
     rf_model = RandomForestClassifier(random_state=42)
     best_accuracy = 0
+    selected_features = None
     iteration = 0
 
     while iteration < max_iterations:
@@ -87,8 +105,8 @@ def train_dynamic_model(json_data, max_iterations=10):
             selected_features = X.columns[rfe.support_]
             print("Melhores features até agora:", selected_features.tolist())
 
-        # Se a acurácia não melhorar, interrompa o loop
-        if accuracy > .7:
+        # Se a acurácia for maior que 0.7, interrompe o loop
+        if accuracy > 0.7:
             break
 
         iteration += 1
@@ -97,14 +115,17 @@ def train_dynamic_model(json_data, max_iterations=10):
     python_code = m2c.export_to_python(rf_model)
 
     # Escrevendo o modelo em um arquivo 'model.py' no diretório pai
-    with open("../model.py", "w") as file:
-        file.write(python_code)
-        file.write(f"\ncolumns = {X.columns.tolist()}\n")
-        file.write(f"classes = {np.unique(y).tolist()}\n")
+    try:
+        with open("model.py", "w") as file:
+            file.write(python_code)
+            file.write(f"\ncolumns = {X.columns.tolist()}\n")
+            file.write(f"classes = {np.unique(y).tolist()}\n")
 
-    print("\nModelo convertido e salvo em 'model.py' com sucesso!\n")
+        print("\nModelo convertido e salvo em 'model.py' com sucesso!\n")
+    except Exception as e:
+        print(f"Erro ao salvar o modelo: {e}")
 
-    return {"accuracy": best_accuracy, "selected_features": selected_features.tolist()}
+    return {"accuracy": best_accuracy, "selected_features": selected_features.tolist() if selected_features is not None else None}
 
 # Chama a função de treinamento com o caminho para o arquivo JSON
-accuracy_result = train_dynamic_model('synthetic_data.json')
+accuracy_result = train_dynamic_model('../output/d927dd2f63c610a25527cf59e6bb43ab.json')

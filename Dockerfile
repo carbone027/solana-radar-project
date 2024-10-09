@@ -22,7 +22,11 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN set -e && \
     apt-get update && \
     apt-get install -y --no-install-recommends \
-    busybox-static=1:1.30.1-7ubuntu3 && \
+    busybox-static=1:1.30.1-7ubuntu3 \
+    build-essential \
+    gfortran \
+    libblas-dev \
+    liblapack-dev && \
     rm -rf /var/lib/apt/lists/* /var/log/* /var/cache/* && \
     useradd --create-home --user-group dapp
 
