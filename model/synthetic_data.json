@@ -1,0 +1,902 @@
+[
+    {
+        "AMT_INCOME_TOTAL": 438892,
+        "AGE": 63,
+        "CNT_DEPENDENTS": 1,
+        "KNOWLEDGE_LEVEL": "sem escolaridade",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "conservative"
+    },
+    {
+        "AMT_INCOME_TOTAL": 98850,
+        "AGE": 66,
+        "CNT_DEPENDENTS": 2,
+        "KNOWLEDGE_LEVEL": "m\u00e9dio",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 456236,
+        "AGE": 29,
+        "CNT_DEPENDENTS": 4,
+        "KNOWLEDGE_LEVEL": "m\u00e9dio",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 127601,
+        "AGE": 49,
+        "CNT_DEPENDENTS": 0,
+        "KNOWLEDGE_LEVEL": "m\u00e9dio",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 318235,
+        "AGE": 67,
+        "CNT_DEPENDENTS": 3,
+        "KNOWLEDGE_LEVEL": "fundamental",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 145341,
+        "AGE": 41,
+        "CNT_DEPENDENTS": 2,
+        "KNOWLEDGE_LEVEL": "fundamental",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 251771,
+        "AGE": 25,
+        "CNT_DEPENDENTS": 0,
+        "KNOWLEDGE_LEVEL": "superior",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "medium",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 72665,
+        "AGE": 20,
+        "CNT_DEPENDENTS": 3,
+        "KNOWLEDGE_LEVEL": "superior",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "medium",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 391801,
+        "AGE": 19,
+        "CNT_DEPENDENTS": 5,
+        "KNOWLEDGE_LEVEL": "sem escolaridade",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "conservative"
+    },
+    {
+        "AMT_INCOME_TOTAL": 265774,
+        "AGE": 46,
+        "CNT_DEPENDENTS": 0,
+        "KNOWLEDGE_LEVEL": "mestrado",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 365377,
+        "AGE": 25,
+        "CNT_DEPENDENTS": 1,
+        "KNOWLEDGE_LEVEL": "superior",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "medium",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 476294,
+        "AGE": 68,
+        "CNT_DEPENDENTS": 0,
+        "KNOWLEDGE_LEVEL": "sem escolaridade",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 136940,
+        "AGE": 27,
+        "CNT_DEPENDENTS": 3,
+        "KNOWLEDGE_LEVEL": "mestrado",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 177682,
+        "AGE": 59,
+        "CNT_DEPENDENTS": 4,
+        "KNOWLEDGE_LEVEL": "mestrado",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 114918,
+        "AGE": 40,
+        "CNT_DEPENDENTS": 0,
+        "KNOWLEDGE_LEVEL": "m\u00e9dio",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 288605,
+        "AGE": 28,
+        "CNT_DEPENDENTS": 3,
+        "KNOWLEDGE_LEVEL": "mestrado",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 411987,
+        "AGE": 36,
+        "CNT_DEPENDENTS": 2,
+        "KNOWLEDGE_LEVEL": "mestrado",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "medium",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 252364,
+        "AGE": 21,
+        "CNT_DEPENDENTS": 3,
+        "KNOWLEDGE_LEVEL": "m\u00e9dio",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "medium",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 486683,
+        "AGE": 36,
+        "CNT_DEPENDENTS": 3,
+        "KNOWLEDGE_LEVEL": "m\u00e9dio",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 275360,
+        "AGE": 44,
+        "CNT_DEPENDENTS": 5,
+        "KNOWLEDGE_LEVEL": "superior",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 300613,
+        "AGE": 68,
+        "CNT_DEPENDENTS": 2,
+        "KNOWLEDGE_LEVEL": "mestrado",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 440066,
+        "AGE": 66,
+        "CNT_DEPENDENTS": 2,
+        "KNOWLEDGE_LEVEL": "superior",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 453720,
+        "AGE": 39,
+        "CNT_DEPENDENTS": 2,
+        "KNOWLEDGE_LEVEL": "sem escolaridade",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 33578,
+        "AGE": 41,
+        "CNT_DEPENDENTS": 0,
+        "KNOWLEDGE_LEVEL": "superior",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "medium",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 477098,
+        "AGE": 54,
+        "CNT_DEPENDENTS": 3,
+        "KNOWLEDGE_LEVEL": "fundamental",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 372024,
+        "AGE": 21,
+        "CNT_DEPENDENTS": 3,
+        "KNOWLEDGE_LEVEL": "sem escolaridade",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 400452,
+        "AGE": 56,
+        "CNT_DEPENDENTS": 1,
+        "KNOWLEDGE_LEVEL": "mestrado",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 124926,
+        "AGE": 53,
+        "CNT_DEPENDENTS": 5,
+        "KNOWLEDGE_LEVEL": "mestrado",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 306294,
+        "AGE": 62,
+        "CNT_DEPENDENTS": 3,
+        "KNOWLEDGE_LEVEL": "m\u00e9dio",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 258318,
+        "AGE": 37,
+        "CNT_DEPENDENTS": 2,
+        "KNOWLEDGE_LEVEL": "m\u00e9dio",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 144461,
+        "AGE": 62,
+        "CNT_DEPENDENTS": 5,
+        "KNOWLEDGE_LEVEL": "superior",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "conservative"
+    },
+    {
+        "AMT_INCOME_TOTAL": 345810,
+        "AGE": 25,
+        "CNT_DEPENDENTS": 0,
+        "KNOWLEDGE_LEVEL": "sem escolaridade",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 118388,
+        "AGE": 43,
+        "CNT_DEPENDENTS": 0,
+        "KNOWLEDGE_LEVEL": "fundamental",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "medium",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 371529,
+        "AGE": 39,
+        "CNT_DEPENDENTS": 3,
+        "KNOWLEDGE_LEVEL": "superior",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 231080,
+        "AGE": 26,
+        "CNT_DEPENDENTS": 2,
+        "KNOWLEDGE_LEVEL": "mestrado",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 105790,
+        "AGE": 67,
+        "CNT_DEPENDENTS": 5,
+        "KNOWLEDGE_LEVEL": "mestrado",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 263253,
+        "AGE": 58,
+        "CNT_DEPENDENTS": 4,
+        "KNOWLEDGE_LEVEL": "mestrado",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 198740,
+        "AGE": 24,
+        "CNT_DEPENDENTS": 1,
+        "KNOWLEDGE_LEVEL": "fundamental",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "conservative"
+    },
+    {
+        "AMT_INCOME_TOTAL": 48742,
+        "AGE": 32,
+        "CNT_DEPENDENTS": 0,
+        "KNOWLEDGE_LEVEL": "mestrado",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "medium",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 178980,
+        "AGE": 39,
+        "CNT_DEPENDENTS": 5,
+        "KNOWLEDGE_LEVEL": "mestrado",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "medium",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 150198,
+        "AGE": 26,
+        "CNT_DEPENDENTS": 3,
+        "KNOWLEDGE_LEVEL": "fundamental",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 384217,
+        "AGE": 22,
+        "CNT_DEPENDENTS": 1,
+        "KNOWLEDGE_LEVEL": "m\u00e9dio",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "medium",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 364233,
+        "AGE": 59,
+        "CNT_DEPENDENTS": 1,
+        "KNOWLEDGE_LEVEL": "sem escolaridade",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 207440,
+        "AGE": 50,
+        "CNT_DEPENDENTS": 5,
+        "KNOWLEDGE_LEVEL": "m\u00e9dio",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 145120,
+        "AGE": 18,
+        "CNT_DEPENDENTS": 3,
+        "KNOWLEDGE_LEVEL": "fundamental",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "medium",
+        "Investor_Type": "conservative"
+    },
+    {
+        "AMT_INCOME_TOTAL": 102357,
+        "AGE": 30,
+        "CNT_DEPENDENTS": 4,
+        "KNOWLEDGE_LEVEL": "mestrado",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 214256,
+        "AGE": 63,
+        "CNT_DEPENDENTS": 3,
+        "KNOWLEDGE_LEVEL": "fundamental",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "conservative"
+    },
+    {
+        "AMT_INCOME_TOTAL": 84928,
+        "AGE": 52,
+        "CNT_DEPENDENTS": 4,
+        "KNOWLEDGE_LEVEL": "fundamental",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 161830,
+        "AGE": 25,
+        "CNT_DEPENDENTS": 2,
+        "KNOWLEDGE_LEVEL": "superior",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 345755,
+        "AGE": 29,
+        "CNT_DEPENDENTS": 5,
+        "KNOWLEDGE_LEVEL": "m\u00e9dio",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 289346,
+        "AGE": 36,
+        "CNT_DEPENDENTS": 5,
+        "KNOWLEDGE_LEVEL": "mestrado",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "medium",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 57747,
+        "AGE": 57,
+        "CNT_DEPENDENTS": 4,
+        "KNOWLEDGE_LEVEL": "superior",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 373287,
+        "AGE": 45,
+        "CNT_DEPENDENTS": 3,
+        "KNOWLEDGE_LEVEL": "sem escolaridade",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "conservative"
+    },
+    {
+        "AMT_INCOME_TOTAL": 364767,
+        "AGE": 44,
+        "CNT_DEPENDENTS": 4,
+        "KNOWLEDGE_LEVEL": "sem escolaridade",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "medium",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 424231,
+        "AGE": 59,
+        "CNT_DEPENDENTS": 0,
+        "KNOWLEDGE_LEVEL": "mestrado",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 149356,
+        "AGE": 37,
+        "CNT_DEPENDENTS": 5,
+        "KNOWLEDGE_LEVEL": "mestrado",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "medium",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 463575,
+        "AGE": 57,
+        "CNT_DEPENDENTS": 2,
+        "KNOWLEDGE_LEVEL": "fundamental",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "medium",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 277979,
+        "AGE": 19,
+        "CNT_DEPENDENTS": 0,
+        "KNOWLEDGE_LEVEL": "mestrado",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 150046,
+        "AGE": 66,
+        "CNT_DEPENDENTS": 5,
+        "KNOWLEDGE_LEVEL": "superior",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "medium",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 32140,
+        "AGE": 18,
+        "CNT_DEPENDENTS": 0,
+        "KNOWLEDGE_LEVEL": "fundamental",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 489514,
+        "AGE": 53,
+        "CNT_DEPENDENTS": 3,
+        "KNOWLEDGE_LEVEL": "m\u00e9dio",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 168891,
+        "AGE": 45,
+        "CNT_DEPENDENTS": 0,
+        "KNOWLEDGE_LEVEL": "superior",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 74286,
+        "AGE": 21,
+        "CNT_DEPENDENTS": 0,
+        "KNOWLEDGE_LEVEL": "mestrado",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 132466,
+        "AGE": 27,
+        "CNT_DEPENDENTS": 3,
+        "KNOWLEDGE_LEVEL": "sem escolaridade",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "medium",
+        "Investor_Type": "conservative"
+    },
+    {
+        "AMT_INCOME_TOTAL": 216376,
+        "AGE": 57,
+        "CNT_DEPENDENTS": 4,
+        "KNOWLEDGE_LEVEL": "m\u00e9dio",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 437821,
+        "AGE": 30,
+        "CNT_DEPENDENTS": 2,
+        "KNOWLEDGE_LEVEL": "fundamental",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 244692,
+        "AGE": 25,
+        "CNT_DEPENDENTS": 2,
+        "KNOWLEDGE_LEVEL": "fundamental",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 356501,
+        "AGE": 66,
+        "CNT_DEPENDENTS": 1,
+        "KNOWLEDGE_LEVEL": "m\u00e9dio",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 321550,
+        "AGE": 60,
+        "CNT_DEPENDENTS": 3,
+        "KNOWLEDGE_LEVEL": "m\u00e9dio",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 58280,
+        "AGE": 65,
+        "CNT_DEPENDENTS": 3,
+        "KNOWLEDGE_LEVEL": "mestrado",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "medium",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 345197,
+        "AGE": 51,
+        "CNT_DEPENDENTS": 4,
+        "KNOWLEDGE_LEVEL": "m\u00e9dio",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 446892,
+        "AGE": 62,
+        "CNT_DEPENDENTS": 5,
+        "KNOWLEDGE_LEVEL": "m\u00e9dio",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 436329,
+        "AGE": 66,
+        "CNT_DEPENDENTS": 5,
+        "KNOWLEDGE_LEVEL": "fundamental",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 263194,
+        "AGE": 38,
+        "CNT_DEPENDENTS": 0,
+        "KNOWLEDGE_LEVEL": "fundamental",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "medium",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 49267,
+        "AGE": 57,
+        "CNT_DEPENDENTS": 4,
+        "KNOWLEDGE_LEVEL": "sem escolaridade",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "conservative"
+    },
+    {
+        "AMT_INCOME_TOTAL": 175104,
+        "AGE": 31,
+        "CNT_DEPENDENTS": 1,
+        "KNOWLEDGE_LEVEL": "m\u00e9dio",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 426236,
+        "AGE": 33,
+        "CNT_DEPENDENTS": 0,
+        "KNOWLEDGE_LEVEL": "fundamental",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 253811,
+        "AGE": 46,
+        "CNT_DEPENDENTS": 5,
+        "KNOWLEDGE_LEVEL": "fundamental",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "medium",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 472819,
+        "AGE": 65,
+        "CNT_DEPENDENTS": 3,
+        "KNOWLEDGE_LEVEL": "fundamental",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "conservative"
+    },
+    {
+        "AMT_INCOME_TOTAL": 160092,
+        "AGE": 55,
+        "CNT_DEPENDENTS": 5,
+        "KNOWLEDGE_LEVEL": "fundamental",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "conservative"
+    },
+    {
+        "AMT_INCOME_TOTAL": 247596,
+        "AGE": 67,
+        "CNT_DEPENDENTS": 4,
+        "KNOWLEDGE_LEVEL": "superior",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 186057,
+        "AGE": 23,
+        "CNT_DEPENDENTS": 2,
+        "KNOWLEDGE_LEVEL": "superior",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 55718,
+        "AGE": 52,
+        "CNT_DEPENDENTS": 0,
+        "KNOWLEDGE_LEVEL": "sem escolaridade",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "conservative"
+    },
+    {
+        "AMT_INCOME_TOTAL": 29650,
+        "AGE": 49,
+        "CNT_DEPENDENTS": 2,
+        "KNOWLEDGE_LEVEL": "sem escolaridade",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "medium",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 255383,
+        "AGE": 35,
+        "CNT_DEPENDENTS": 5,
+        "KNOWLEDGE_LEVEL": "sem escolaridade",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 255014,
+        "AGE": 57,
+        "CNT_DEPENDENTS": 2,
+        "KNOWLEDGE_LEVEL": "fundamental",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 33976,
+        "AGE": 19,
+        "CNT_DEPENDENTS": 5,
+        "KNOWLEDGE_LEVEL": "sem escolaridade",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "conservative"
+    },
+    {
+        "AMT_INCOME_TOTAL": 115870,
+        "AGE": 38,
+        "CNT_DEPENDENTS": 4,
+        "KNOWLEDGE_LEVEL": "sem escolaridade",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "conservative"
+    },
+    {
+        "AMT_INCOME_TOTAL": 35809,
+        "AGE": 69,
+        "CNT_DEPENDENTS": 5,
+        "KNOWLEDGE_LEVEL": "superior",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 487003,
+        "AGE": 20,
+        "CNT_DEPENDENTS": 2,
+        "KNOWLEDGE_LEVEL": "superior",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 488965,
+        "AGE": 70,
+        "CNT_DEPENDENTS": 0,
+        "KNOWLEDGE_LEVEL": "fundamental",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 131570,
+        "AGE": 31,
+        "CNT_DEPENDENTS": 1,
+        "KNOWLEDGE_LEVEL": "superior",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "medium",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 102596,
+        "AGE": 33,
+        "CNT_DEPENDENTS": 3,
+        "KNOWLEDGE_LEVEL": "superior",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "medium",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 180324,
+        "AGE": 41,
+        "CNT_DEPENDENTS": 5,
+        "KNOWLEDGE_LEVEL": "superior",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 103282,
+        "AGE": 62,
+        "CNT_DEPENDENTS": 0,
+        "KNOWLEDGE_LEVEL": "mestrado",
+        "INVESTMENT_HORIZON": "medium",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 154848,
+        "AGE": 25,
+        "CNT_DEPENDENTS": 4,
+        "KNOWLEDGE_LEVEL": "m\u00e9dio",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "conservative"
+    },
+    {
+        "AMT_INCOME_TOTAL": 232182,
+        "AGE": 38,
+        "CNT_DEPENDENTS": 2,
+        "KNOWLEDGE_LEVEL": "fundamental",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "conservative"
+    },
+    {
+        "AMT_INCOME_TOTAL": 358630,
+        "AGE": 34,
+        "CNT_DEPENDENTS": 0,
+        "KNOWLEDGE_LEVEL": "fundamental",
+        "INVESTMENT_HORIZON": "long",
+        "RISK_TOLERANCE": "high",
+        "Investor_Type": "aggressive"
+    },
+    {
+        "AMT_INCOME_TOTAL": 368454,
+        "AGE": 46,
+        "CNT_DEPENDENTS": 0,
+        "KNOWLEDGE_LEVEL": "fundamental",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "moderate"
+    },
+    {
+        "AMT_INCOME_TOTAL": 459944,
+        "AGE": 59,
+        "CNT_DEPENDENTS": 1,
+        "KNOWLEDGE_LEVEL": "mestrado",
+        "INVESTMENT_HORIZON": "short",
+        "RISK_TOLERANCE": "low",
+        "Investor_Type": "aggressive"
+    }
+]
