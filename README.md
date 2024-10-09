@@ -8,7 +8,6 @@ A **36'Oracle** é uma *Startup* que fornece um serviço de API avançada projet
 - **🧹 Tratamento e Normalização de Dados**: Processo automatizado para limpar e organizar grandes volumes de dados bancários, com cada transação registrada no blockchain, garantindo transparência e integridade.
 - **📊 Categorização de Clientes**: Identificação precisa dos perfis de investidor dos clientes, permitindo segmentação personalizada. A verificação de dados pode ser auditada diretamente no blockchain.
 - **🔮 Previsão de Tipo de Investidor**: A IA prevê com precisão o tipo de investidor de cada cliente, categorizando-os para decisões estratégicas.
-- **🔗 Requisição HTTP para Investidor**: O banco pode solicitar o tipo de investidor de qualquer cliente diretamente via requisição HTTP, obtendo rapidamente o perfil categorizado pela IA.
 
 A API foi projetada para instituições financeiras que buscam **otimizar suas operações**, fornecendo informações valiosas sobre o perfil dos clientes e garantindo que os dados estejam sempre acessíveis e auditáveis via blockchain.
 
@@ -50,9 +49,6 @@ Escolha as **features** (atributos) que deseja utilizar para melhorar a performa
 Após a seleção de **features** e o treinamento do modelo, a IA processará os dados, categorizando os clientes de acordo com os perfis de investidor. Todos os resultados do processo estarão disponíveis para verificação no **ledger** da **blockchain **, garantindo **transparência total** em todas as fases.
 
 ---
-
-recomendações
-
 ### 3. Previsão 🎯
 
 As previsões e recomendações são geradas pela IA com base na análise dos dados fornecidos, utilizando **modelos preditivos**. Esses modelos são capazes de identificar padrões nos perfis dos clientes e fornecer **insights acionáveis** para recomendações personalizadas e estratégicas.
@@ -85,11 +81,6 @@ O processo de recepção de dados começa com o envio de um arquivo no formato *
 - Após a transformação do **XML** em **JSON**, o conteúdo é otimizado para compatibilidade com a API e modelos de machine learning e enviado para o treinamento.
 
 ---
-
-### 2. Treinamento do Modelo de IA e Criação do Modelo Preditivo 🧠
-
-Depois do tratamento de dados, as colunas derivadas das tags são utilizadas como **features** (atributos), enquanto os dados convertidos em **JSON** formam o **dataframe** principal para a análise. A API, então, inicia automaticamente o processo de treinamento da IA, utilizando o algoritmo **[RandomForest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)**. O modelo é ajustado com base nos dados fornecidos, identificando padrões e criando um modelo preditivo robusto a partir do **JSON** gerado e preparado no **dataframe**.
-
 ### 2. Treinamento do Modelo de IA e Criação do Modelo Preditivo 🧠
 
 Depois do tratamento de dados, as colunas derivadas das tags são utilizadas como **features** (atributos), enquanto os dados convertidos em **JSON** formam o **dataframe** principal para a análise. A API, então, inicia automaticamente o processo de treinamento da IA, utilizando o algoritmo **[RandomForest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)**. O modelo é ajustado com base nos dados fornecidos, identificando padrões e criando um modelo preditivo robusto a partir do **JSON** gerado e preparado no **dataframe**.
@@ -105,7 +96,6 @@ O processo de treinamento segue as seguintes etapas técnicas:
 7. **Registro no Blockchain**: O progresso e os resultados do treinamento são registrados na **blockchain**, garantindo transparência, segurança e auditabilidade no processo.
 
 ---
-
 ### 3. Solicitação do Perfil de Investidor do Cliente 📝
 
 Para obter o perfil de investidor de um cliente, basta realizar uma requisição **HTTP** utilizando a API. A IA processa os dados enviados em tempo real, aplicando o modelo de decisão baseado na **RandomForest**, e classifica com precisão o perfil de investidor do cliente.
@@ -116,7 +106,6 @@ Para obter o perfil de investidor de um cliente, basta realizar uma requisição
 Este processo garante que todas as operações realizadas pela **36'Oracle** sejam totalmente confiáveis!
 
 ---
-
 # Exemplos de Uso 💡:
 
 ### Treinamento da IA 
