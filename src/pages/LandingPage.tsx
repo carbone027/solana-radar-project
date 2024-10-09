@@ -11,7 +11,6 @@ const LandingPage = () => {
         sectionName3='WANNA CONTACT?'
       />
       <Hero 
-        Src='batatas.com.br' 
         mainTitle="36'ORACLE" 
         secondTitle='A NEW WAY OF SEEING MONEY' 
       />

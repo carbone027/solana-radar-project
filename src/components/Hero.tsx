@@ -1,5 +1,5 @@
 import '../assets/all.css';
-import Spline from '@splinetool/react-spline/next';
+import Spline from '@splinetool/react-spline';
 
 interface HeroProps {
     mainTitle: string;
@@ -13,7 +13,7 @@ const Hero = ({  mainTitle, secondTitle }: HeroProps) => {
                 <h1>{mainTitle}</h1>
                 <h2>{secondTitle}</h2>
             </div>
-            <Spline scene="https://prod.spline.design/3hRqS61U2Dy-xagM/scene.splinecode"/>
+            <Spline className='spline' scene="https://prod.spline.design/3hRqS61U2Dy-xagM/scene.splinecode"/>
         </div>
     );
 }

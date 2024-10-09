@@ -58,6 +58,7 @@ body{
     height: 64px;
     position: fixed;
     background-color: #242424;
+    width: 100%;
 }
 
 .header button{
@@ -92,7 +93,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 120px;
+    margin-bottom: 300px;
+    padding-top: 64px;
+    padding-bottom: 24px;
 }
 
 .heroTexts {
@@ -111,6 +114,11 @@ body{
     font-style: 'Ropa Sans';
 }
 
+.spline {
+    width: 100px;
+    height: 100px;
+
+}
 
 /* ----------------- WhatAreWe ----------------- */
 
