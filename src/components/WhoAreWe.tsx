@@ -11,7 +11,10 @@ const WhoAreWe = ({ title, description1, description2, imgsrc }: WhoAreWeProps) 
     return (
         <div className='wowAll' id='WOW'>
             <div className='wowRow'>
-                <h3>{title}</h3>
+                <div className='wow'>
+                    <h3 className='wowA'>{title}</h3>
+                    <h3 className='wowR'>ARE WE</h3>
+                </div>
                 <img src={imgsrc}></img>
             </div>
             <div className='wowRow'>

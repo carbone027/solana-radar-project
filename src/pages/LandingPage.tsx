@@ -6,11 +6,9 @@ const LandingPage = () => {
     <div className='all'>
       <Header 
         logo='' 
-        sectionName1='Sempre' 
-        sectionName2='Sonhei' 
-        sectionName3='Em' 
-        sectionName4='Ser' 
-        sectionName5='Batata' 
+        sectionName1='WHAT ARE WE?' 
+        sectionName2='WHO ARE WE?' 
+        sectionName3='WANNA CONTACT?'
       />
       <Hero 
         Src='batatas.com.br' 
@@ -18,21 +16,21 @@ const LandingPage = () => {
         secondTitle='A NEW WAY OF SEEING MONEY' 
       />
       <WhatAreWe 
-        title1='Sempre' 
-        title2='a' 
-        list1='b' 
-        list2='c' 
-        list3='d' 
-        list4='e' 
+        title1='WHAT' 
+        title2='ARE WE?' 
+        list1='A SYSTEM THAT RECIVES THE DATABASES SENT BY THE BANK' 
+        list2='STORES DATA VIA SOLANA BLOCKCHAIN' 
+        list3='USES AI TO CATEGORIZE PROFILES AND PREDICT BEHAVIORS' 
+        list4='PROVIDES VALUABLE INSIGHTS' 
         description='batatas' 
       />
       <WhoAreWe 
-        title='Nem sempre' 
-        description1='Humanos' 
-        description2='Sempre serão' 
+        title='WHO' 
+        description1="WE ARE A TEAM OF TECH ENTHUSIASTS PARTICIPATING IN A HACKATHON WITH A MISSION TO REVOLUTIONIZE FINANCIAL DATA MANAGEMENT. OUR PROJECT, 36'ORACLE, COMBINES BLOCKCHAIN AND AI TO OFFER SECURE, TRANSPARENT, AND EFFICIENT BANKING SOLUTIONS." 
+        description2='WITH EXPERTISE IN SOFTWARE DEVELOPMENT AND DATA SCIENCE, WE ARE DRIVEN TO CREATE INNOVATIVE TOOLS THAT EMPOWER INSTITUTIONS TO MAKE SMARTER, DATA-DRIVEN DECISIONS AND OPTIMIZE THEIR OPERATIONS WITH CONFIDENCE.' 
         imgsrc='' 
       />
-      <ContactUs title='CONTACT US' />
+      <ContactUs title='CONTACT US'/>
     </div>
   );
 }

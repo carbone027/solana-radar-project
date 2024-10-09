@@ -3,6 +3,10 @@
     box-sizing: border-box;
     margin: 0;
     margin: 0;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
 }
 
 html {
@@ -36,6 +40,10 @@ body{
     box-sizing: border-box;
 }
 
+.all {
+    letter-spacing: 2px;
+    background-color: #070F2B;
+}
 
 
 /* ----------------- Header ----------------- */
@@ -78,11 +86,13 @@ body{
 /* ----------------- Hero ----------------- */
 
 .hero {
+    background: linear-gradient(180deg, #1B1A55 0%, #070F2B 100%);
     height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 120px;
 }
 
 .heroTexts {
@@ -90,6 +100,16 @@ body{
     flex-direction: column-reverse;
 }
 
+.heroTexts h1 {
+    font-size: 128px;
+    font-style: 'Archivo';
+    font-weight: 900;
+}
+
+.heroTexts h2 {
+    font-size: 32px;
+    font-style: 'Ropa Sans';
+}
 
 
 /* ----------------- WhatAreWe ----------------- */
@@ -100,12 +120,27 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 60px;
+    margin-bottom: 120px;
+}
+
+.ropa {
+    font-size:64px;
+    font-style: 'Ropa Sans';
+    letter-spacing: 4px;
+    line-height: 12px;
+}
+
+.archivo {
+    font-style: 'Archivo';
+    font-size: 110px;
+    font-weight: 900;
 }
 
 .wawDescription {
     list-style-type: none;
-    padding-top:96px
+    font-size: 32px;
+    font-style: 'Ropa Sans';
+    padding-top:40px
 }
 
 .wawDescription li {
@@ -122,6 +157,20 @@ body{
     justify-content: center;
     align-items: center;
     height: 80vh;
+    margin-bottom: 120px;
+}
+
+.wowA {
+    font-family: 'Archivo';
+    font-size: 200px;
+    font-weight: 900;
+    line-height: 130px;
+}
+
+.wowR {
+    font-family: "Archivo";
+    font-size:64px;
+    font-weight: bold;
 }
 
 .wow {
@@ -139,6 +188,19 @@ body{
 
 .wow p {
     padding-bottom: 24px;
+    font-family: 'Ropa Sans';
+    font-size: 35px;
+}
+
+
+
+/* ----------------- Contact ----------------- */
+
+.contact h4 {
+    font-family: 'Archivo';
+    font-weight: 900;
+    font-size: 170;
+    margin-bottom: 120px;
 }
 
 
@@ -154,56 +216,82 @@ body{
     justify-items: center;
     height: 100vh;
     width: 100vw;
-}
-
-.loginLeft {
-    background-color: #1B1A55;
-    width: 70vw;
-    height: 100vh;
-    z-index: 0;
-}
-
-.loginRight {
-    background-color: #242424;
-    width: 30vw;
-    height: 100vh;
-    z-index: 1;
+    background-image: url('loginBG.png');
+    background-repeat: no-repeat, repeat;
+    background-size:cover;
+    background-position: center;
+    z-index: 40;
 }
 
 .loginCard {
+    margin-left: 50vw;
+    font-family: 'Archivo';
     display: flex;
     flex-direction: column;
-    width: 600px;
-    height: 640px;
+    width: 50vw;
+    max-width: 480px;
+    height: auto;
     align-items: center;
     justify-items: center;
     border-radius: 24px;
     z-index: 0;
-    background-color: azure;
+    background-color: #535C9166;
     padding: 24px;
 }
 
 .loginCardTop {
     display: flex;
     flex-direction: column;
-    gap: 12px;
     color: #242424;
     align-items: center;
     justify-items: center;
     padding-bottom: 32px;
+    width: 100%;
+    color: #E6E4F5
+}
+
+.loginCardTop h2{
+    font-weight: 900;
+    margin-bottom: 32px;
+    letter-spacing: 2px;
 }
 
 .loginCardTop input{
-    background-color: transparent;
-    border-radius: 4px;
-    padding: 8px;
+    background-color: #4D558B;
+    border-radius: 8px;
+    width: 80%;
+    border: none;
+    padding: 12px;
+}
+
+#pass{
+    margin-top: 42px;
+}
+
+.loginCardTop input::placeholder{
+    color: #FFFFFF61;
+    font-family: 'Ropa Sans';
+    letter-spacing: 2px;
 }
 
 .loginCardBottom {
+    font-family: 'Ropa Sans';
     display: flex;
     flex-direction: column;
     gap: 12px;
     color: #242424;
     align-items: center;
     justify-items: center;
+}
+
+.loginCardBottom button {
+    background-color: #070F2B;
+    font-size:40px;
+    letter-spacing: 8px;
+    padding:10px 50px;
+    text-align: center;
+}
+
+.loginCardBottom a{
+    color: #E6E4F5;
 }

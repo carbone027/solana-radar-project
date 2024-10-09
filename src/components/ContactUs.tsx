@@ -6,9 +6,8 @@ interface ContactUsProps {
 
 const ContactUs = ({ title }: ContactUsProps) => {
     return (
-        <div className='section contact-us' id='CONTACT'>
-            <h2>{title}</h2>
-            <div className='contact-placeholder'></div> {/* Placeholder para adicionar formulário ou informações de contato no futuro */}
+        <div className='contact' id='CONTACT'>
+            <h4>{title}</h4>
         </div>
     );
 }
