@@ -326,3 +326,196 @@ body{
     color: #E6E4F5;
 }
 
+
+
+
+/* ----------- TEST PAGE ------------- */
+
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  .main-container {
+    overflow: hidden;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container {
+    position: relative;
+    width: 1440px;
+    height: 900px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #070f2b, #1b1a55);
+    overflow: hidden;
+  }
+  .flex-column-c {
+    position: absolute;
+    width: 669.148px;
+    height: 799.386px;
+    top: 8.432px;
+    left: 37.985px;
+    z-index: 8;
+  }
+  .rectangle {
+    position: relative;
+    width: 330.638px;
+    height: 94.681px;
+    margin: 704.705px 0 0 169.256px;
+    cursor: pointer;
+    background: #9290c3;
+    border: none;
+    z-index: 3;
+    overflow: visible auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 11.4px 0 rgba(0, 0, 0, 0.41);
+  }
+  .run {
+    position: relative;
+    width: 165.902px;
+    height: 44.8px;
+    margin: 24.312px 0 0 79.355px;
+    background: url(../assets/images/3396da07-a76f-4fe5-8af3-5c77785553b4.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 4;
+  }
+  .input-tags-separated {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 669.148px;
+    height: 121px;
+    top: 0;
+    left: 0;
+    color: #9290c3;
+    font-family: Ropa Sans, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: 3px;
+    z-index: 8;
+  }
+  .rectangle-1 {
+    position: absolute;
+    width: 630.119px;
+    height: 127.053px;
+    top: 100.439px;
+    left: 19.515px;
+    background: #1b1a55;
+    z-index: 1;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25) inset;
+  }
+  .upload-the-xml {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 394.608px;
+    height: 121px;
+    top: 227.492px;
+    left: 137.27px;
+    color: #9290c3;
+    font-family: Ropa Sans, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: 3px;
+    z-index: 7;
+  }
+  .rectangle-2 {
+    position: absolute;
+    width: 266.668px;
+    height: 189.362px;
+    top: 317.929px;
+    left: 201.24px;
+    background: #535c91;
+    z-index: 2;
+    border-radius: 12px;
+    box-shadow: 0 4px 11.4px 0 rgba(0, 0, 0, 0.41) inset;
+  }
+  .vector {
+    position: relative;
+    width: 142.352px;
+    height: 129.017px;
+    margin: 30.173px 0 0 62.158px;
+    background: url(../assets/images/1842ab5a-01ea-4ba7-a11f-24b1ec45ab82.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 9;
+  }
+  .rectangle-3 {
+    position: absolute;
+    width: 630.119px;
+    height: 804.136px;
+    top: 47.932px;
+    left: 767.167px;
+    font-size: 0px;
+    background: #1b1a55;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25) inset;
+  }
+  .output {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 299.556px;
+    height: 63px;
+    margin: 0 0 0 165.281px;
+    color: #0b1134;
+    font-family: Ropa Sans, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 63px;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 3px;
+    z-index: 10;
+  }
+  .vector-4 {
+    position: absolute;
+    width: 407.549px;
+    height: 361.705px;
+    top: 171.931px;
+    left: 111.285px;
+    background: url(../assets/images/e769a1d6-b5ab-4cd4-b813-ba63f4773bce.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 5;
+  }
+  .nothing-here-yet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 394.608px;
+    height: 121px;
+    top: 499.734px;
+    left: 117.756px;
+    color: #4d558b;
+    font-family: Ropa Sans, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: 3px;
+    z-index: 6;
+  }  
