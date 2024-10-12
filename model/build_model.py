@@ -128,4 +128,4 @@ def train_dynamic_model(json_file_path, max_iterations=10):
     return {"accuracy": best_accuracy, "selected_features": selected_features.tolist() if selected_features is not None else None}
 
 # Chama a função de treinamento com o caminho para o arquivo JSON
-accuracy_result = train_dynamic_model('../output/d927dd2f63c610a25527cf59e6bb43ab.json')
+accuracy_result = train_dynamic_model('database.json')

@@ -1,4 +1,5 @@
 import { Resolver, Query, Mutation, Arg } from 'type-graphql';
+import { exec } from 'child_process';
 import { XMLFilterHelper } from '../helpers/XMLFilterHelper';
 import { XMLToJsonHelper } from '../helpers/XMLToJsonHelper';
 import { TagValidationResult } from '../helpers/TagValidationResult';
@@ -15,9 +16,9 @@ export class XMLProcessingResolver {
   private outputDir: string;
 
   constructor() {
-    this.outputDir = path.join(__dirname, '../../output');
+    this.outputDir = path.join(__dirname, '../../model'); // Atualiza para salvar na pasta 'model'
 
-    // Verifica se a pasta 'output' existe, se não, cria
+    // Verifica se a pasta 'model' existe, se não, cria
     if (!fs.existsSync(this.outputDir)) {
       fs.mkdirSync(this.outputDir);
     }
@@ -29,21 +30,42 @@ export class XMLProcessingResolver {
   }
 
   @Mutation(() => TagValidationResult)
-  async filterAndConvertXml(
-    @Arg('features', () => [String]) features: string[],
-    @Arg('file', () => String) file: string
-  ): Promise<TagValidationResult> {
-    const tempFilePath = path.join(__dirname, `../../uploads/${file}`);
-    const result = await this.processXmlFile(tempFilePath, features);
+async filterAndConvertXml(
+  @Arg('features', () => [String]) features: string[],
+  @Arg('file', () => String) file: string
+): Promise<TagValidationResult> {
+  const tempFilePath = path.join(__dirname, `../../uploads/${file}`);
+  const result = await this.processXmlFile(tempFilePath, features);
 
-    // Salvar o JSON processado
-    const jsonFilePath = path.join(this.outputDir, `${file}.json`); // Usar this.outputDir
-    fs.writeFileSync(jsonFilePath, JSON.stringify(result.data, null, 2));
+  // Salvar o JSON processado como 'database.json' na pasta 'model'
+  const jsonFilePath = path.join(this.outputDir, `database.json`); // Usa sempre o nome 'database.json'
+  fs.writeFileSync(jsonFilePath, JSON.stringify(result.data, null, 2));
 
-    fs.unlinkSync(tempFilePath); // Remove o arquivo após o processamento
+  // Executar o build_model.py após salvar o JSON
+  await this.runBuildModelScript(); // Chama a função que executa o script
 
-    return result;
-  }
+  fs.unlinkSync(tempFilePath); // Remove o arquivo após o processamento
+
+  return result;
+}
+
+// Nova função para executar o build_model.py
+private runBuildModelScript(): Promise<void> {
+  return new Promise((resolve, reject) => {
+    exec('python3 ' + path.join(this.outputDir, 'build_model.py'), (error, stdout, stderr) => {
+      if (error) {
+        console.error(`Erro ao executar build_model.py: ${error.message}`);
+        return reject(error);
+      }
+      if (stderr) {
+        console.error(`Erro no stderr: ${stderr}`);
+        return reject(new Error(stderr));
+      }
+      console.log(`Saída do build_model.py: ${stdout}`);
+      resolve();
+    });
+  });
+}
 
   async processXmlFile(filePath: string, features: string[]): Promise<TagValidationResult> {
     console.log(`Lendo o arquivo: ${filePath}`);
