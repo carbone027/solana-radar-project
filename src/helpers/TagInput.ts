@@ -1,4 +1,5 @@
 import { InputType, Field } from 'type-graphql';
+import CryptoJS from 'crypto-js';
 
 @InputType()
 export class TagInput {
@@ -6,5 +7,19 @@ export class TagInput {
   xmlContent: string = ''; // O conteúdo do XML como string
 
   @Field(() => [String])
-  tags: string[] = []; // A lista de tags (features) que você quer filtrar
+  private _encryptedTags: string[] = [];
+
+  private static encryptionKey = process.env.ENCRYPTION_KEY;
+
+  set tags(tags: string[]) {
+    this._encryptedTags = tags.map(tag =>
+      CryptoJS.AES.encrypt(tag, TagInput.encryptionKey).toString()
+    );
+  }
+
+  get tags(): string[] {
+    return this._encryptedTags.map(encryptedTag =>
+      CryptoJS.AES.decrypt(encryptedTag, TagInput.encryptionKey).toString(CryptoJS.enc.Utf8)
+    );
+  }
 }
