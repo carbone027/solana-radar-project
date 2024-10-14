@@ -14,7 +14,7 @@ function Cluster() {
 
     const handleSubmit = async (event: React.FormEvent) => {
         event.preventDefault();
-        // O restante do código de envio de formulário
+        // o resto do codigo do trem
     };
 
     return (
@@ -35,8 +35,8 @@ function Cluster() {
                     required
                 />
                 <span className='upload-the-xml'>UPLOAD THE XML</span>
-                
-                {/* Botão personalizado de upload */}
+
+
                 <label htmlFor="file-upload" className="custom-upload-button">
                 <img src={pngIcon} alt="PNG Icon" className="png-icon" />
                 </label>
