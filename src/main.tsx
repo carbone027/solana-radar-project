@@ -1,11 +1,13 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import ApolloProviderWrapper from 'ApolloProvider';
-import App from './App.tsx'
-import './index.css'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import App from './App';
+import './index.css';
+import ApolloProviderWrapper from './ApolloProvider'; // Importe o ApolloProvider
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <ApolloProviderWrapper>
+      <App />
+    </ApolloProviderWrapper>
   </StrictMode>,
-)
+);
