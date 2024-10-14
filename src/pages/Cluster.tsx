@@ -5,6 +5,7 @@ import pngIcon from '../assets/Vector.png';
 function Cluster() {
     const [file, setFile] = useState<File | null>(null);
     const [features, setFeatures] = useState('');
+    const [success, setSuccess] = useState(false);  // Estado para controlar o pop-up de sucesso
 
     const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setFile(e.target.files ? e.target.files[0] : null);
@@ -12,7 +13,16 @@ function Cluster() {
 
     const handleSubmit = async (event: React.FormEvent) => {
         event.preventDefault();
-        // código para o submit
+        
+        // Código para o submit (você pode adicionar sua lógica de envio aqui)
+        
+        // Exibir o pop-up de sucesso
+        setSuccess(true);
+
+        // Opcional: Esconder o pop-up de sucesso após alguns segundos
+        setTimeout(() => {
+            setSuccess(false);
+        }, 3000); // Esconde após 3 segundos
     };
 
     return (
@@ -47,6 +57,13 @@ function Cluster() {
                     <span className='runtext'>SEND</span>
                 </button>
             </div>
+
+            {/* Exibir pop-up de sucesso se o estado 'success' for true */}
+            {success && (
+                <div className='success-popup'>
+                    <p>Success!</p>
+                </div>
+            )}
         </div>
     );
 }

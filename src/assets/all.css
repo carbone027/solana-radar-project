@@ -429,4 +429,18 @@ body{
   .custom-upload-button:hover {
     background-color: #727fcb;
   }
+  .success-popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4BB543;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    z-index: 1000;
+}
+
   
