@@ -4,8 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+<<<<<<< HEAD
     "dev": "vite",
     "server": "tsnd --respawn --transpile-only src/server.ts",
+=======
+    "dev:frontend": "vite",
+    "dev:backend": "nodemon backend/index.js",
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+>>>>>>> backend-login
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -14,12 +20,25 @@
     "@apollo/client": "^3.11.8",
     "@splinetool/react-spline": "^4.0.0",
     "apollo-server": "^3.13.0",
+<<<<<<< HEAD
     "class-validator": "^0.14.1",
     "dotenv": "^16.4.5",
     "graphql": "^16.9.0",
     "graphql-type-json": "^0.3.2",
+=======
+    "axios": "^1.7.7",
+    "bcrypt": "^5.1.1",
+    "class-validator": "^0.14.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "graphql": "^16.9.0",
+    "graphql-type-json": "^0.3.2",
+    "jsonwebtoken": "^9.0.2",
+>>>>>>> backend-login
     "multer": "^1.4.5-lts.1",
     "next": "^14.2.15",
+    "pg": "^8.13.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
@@ -40,6 +59,7 @@
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.12",
     "globals": "^15.9.0",
+    "nodemon": "^3.1.7",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.7.0",
