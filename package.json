@@ -4,12 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"vite\" \"tsnd --respawn --transpile-only src/server.ts\"",
+    "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@apollo/client": "^3.11.8",
     "@splinetool/react-spline": "^4.0.0",
     "apollo-server": "^3.13.0",
     "class-validator": "^0.14.1",
