@@ -337,223 +337,91 @@ body{
       "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
       "Source Han Sans CN", sans-serif;
   }
-  
-  .main-container {
-    overflow: hidden;
-  }
-  
-  .main-container,
-  .main-container * {
-    box-sizing: border-box;
-  }
-  
-  input,
-  select,
-  textarea,
-  button {
-    outline: 0;
-  }
-  
   .main-container {
     position: relative;
-    width: 1440px;
-    height: 900px;
-    margin: 0 auto;
+    width: 100vw; /* Ocupa toda a largura da janela */
+    height: 100vh; /* Ocupa toda a altura da janela */
+    margin: 0;
     background: linear-gradient(180deg, #070f2b, #1b1a55);
+    display: flex; /* Flex container */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
     overflow: hidden;
-  }
-  .flex-column-c {
-    position: absolute;
-    width: 669.148px;
-    height: 799.386px;
-    top: 8.432px;
-    left: 37.985px;
-    z-index: 8;
-  }
-  .run {
-    position: relative;
-    width: 330.638px;
-    height: 94.681px;
-    margin: 704.705px 0 0 169.256px;
-    cursor: pointer;
-    background: #9290c3;
-    border: none;
-    z-index: 3;
-    overflow: visible auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 11.4px 0 rgba(0, 0, 0, 0.41);
-  }
-  .runtext {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  color: #121543;
-  font-family: Archivo Black, var(--default-font-family);
-  font-size: 64px;
-  font-weight: 900;
-  line-height: 55.993px;
-  text-align: center;
-  white-space: nowrap;
-  letter-spacing: 10px;
-  z-index: 11;
 }
 
-  .input-tags-separated {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 669.148px;
-    height: 121px;
-    top: 0;
-    left: 0;
-    color: #9290c3;
-    font-family: Ropa Sans, var(--default-font-family);
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 64px;
-    text-align: center;
-    letter-spacing: 3px;
-    z-index: 8;
-  }
-  .rectangle-1 {
-    position: absolute;
-    width: 630.119px;
-    height: 127.053px;
-    top: 100.439px;
-    left: 19.515px;
-    background: #1b1a55;
-    z-index: 1;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25) inset;
-  }
-  .upload-the-xml {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 394.608px;
-    height: 121px;
-    top: 227.492px;
-    left: 137.27px;
-    color: #9290c3;
-    font-family: Ropa Sans, var(--default-font-family);
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 64px;
-    text-align: center;
-    letter-spacing: 3px;
-    z-index: 7;
-  }
-  .rectangle-2 {
-    position: relative;
-    width: 266.668px;
-    height: 189.362px;
-    top: 317.929px;
-    left: 201.24px;
-    background: #535c91;
-    z-index: 2;
-    border-radius: 12px;
-    box-shadow: 0 4px 11.4px 0 rgba(0, 0, 0, 0.41) inset;
-  }
-  
-  .rectangle-3 {
-    position: absolute;
-    width: 630.119px;
-    height: 804.136px;
-    top: 47.932px;
-    left: 767.167px;
-    font-size: 0px;
-    background: #1b1a55;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25) inset;
+.flex-column-c {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Espaço entre os elementos */
-    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo dentro da coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    gap: 20px; /* Espaçamento entre os elementos */
 }
 
-.output {
+.run {
+    width: 330.638px;
+    height: 94.681px;
+    background: #9290c3;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 11.4px 0 rgba(0, 0, 0, 0.41);
+}
+
+.runtext {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 100%;
-    height: 63px;
-    margin: 0;
-    color: #0b1134;
-    font-family: Ropa Sans, var(--default-font-family);
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 63px;
+    color: #121543;
+    font-family: Archivo Black, var(--default-font-family);
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 55.993px;
     text-align: center;
     white-space: nowrap;
-    letter-spacing: 3px;
-    z-index: 10;
+    letter-spacing: 10px;
+    z-index: 11;
 }
 
-.image-container {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.centered-image {
-    width: 185px;
-    height: 180px;
-}
-
-  
-  .run:hover {
+.run:hover {
     background-color: #abb7fd;
   }
 
-  .nothing-here-yet {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 394.608px;
-    height: 121px;
-    top: 499.734px;
-    left: 117.756px;
-    color: #4d558b;
-    font-family: Ropa Sans, var(--default-font-family);
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 64px;
-    text-align: center;
-    letter-spacing: 3px;
-    z-index: 6;
-  }  
-
-  /* Esconda o botão de upload padrão */
-input[type="file"] {
+  input[type="file"] {
     display: none;
   }
-  
-  .custom-upload-button {
-    position: absolute;
+
+.input-tags-separated, .upload-the-xml {
+    font-family: Ropa Sans, sans-serif;
+    font-size: 36px;
+    color: #9290c3;
+    text-align: center;
+}
+
+.rectangle-1 {
+    width: 630px;
+    height: 50px;
+    padding: 10px;
+    background: #1b1a55;
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25) inset;
+}
+
+.custom-upload-button {
     width: 266.668px;
     height: 189.362px;
-    top: 317.929px;
-    left: 201.24px;
     background-color: #535c91;
-    color: white;
-    cursor: pointer;
     border-radius: 12px;
-    font-size: 14px;
-    z-index: 2;
-    box-shadow: 0 4px 11.4px 0 rgba(0, 0, 0, 0.41) inset;
     display: flex;
-    justify-content: center;  /* Horizontal centering */
-    align-items: center;      /* Vertical centering */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 11.4px 0 rgba(0, 0, 0, 0.41) inset;
 }
 
 .png-icon {
-    width: 125px;  /* Adjust the icon size as needed */
+    width: 125px;
     height: 120px;
 }
 
