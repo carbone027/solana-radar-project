@@ -16,6 +16,11 @@
 The API is designed for financial institutions seeking **operational optimization**, providing valuable insights into customer profiles with full auditability via blockchain.
 
 ---
+### Histórico de versöes 🕗
+
+- 0.1.0 -> 8/10/2024
+- 0.2.0 -> 13/10/2024
+---
 
 ## Technologies Used 🛠️
 
@@ -143,3 +148,4 @@ After training, customers are classified according to their investor profiles us
 
 ---
 
+H
